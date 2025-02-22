@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Eye</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  </head>
+  <body> 
+  
+<!-- Header Area -->  
+ 
+<div id="container"> 
+
+<div id="header" style="height: 100px; margin-top: 10px"  > 
+<br>
+<div id="logo">
+<h1 style="margin-left:40px; margin-top: 15px; font-size: 40px; font-family: Goudy"> Fish Eye </h1>
+</div>
+
+</div> 
+  <div id="headerArea">
+   
+    <nav id="navbar" style="margin-bottom: 15px;"><ul>
+      <li><a href="index.html" style="font-family: Goudy">Home </a></li>
+       <li><a href="gallery.html" style="font-family: Goudy">Gallery</a></li>
+       <li><a href="misc.html" style="font-family: Goudy">Misc</a></li>
+       <li><a href="links.html" style="font-family: Goudy">Links</a></li>
+       </ul></nav></div>
+            <div id="flex">
+<main style="background-color: transparent; padding: 0px; height: auto">
+<div class="lighttext">
+<h1 style="font-family: Goudy; font-size: 20px; margin-bottom: 10px; margin-left: 10px;">~ Art Gallery ~</h1>
+</div>
+ <!-- Row One -->
+<div class="photogrid" style="vertical-align: top">
+  <div> <img class="rounded" src="art/wander.jpg" height="auto" width="100%" loading="lazy"> </div>
+  <div> <img class="rounded" src="art/whitelady.jpg" height="auto" width="100%" loading="lazy"> </div>
+ </div>
+<!-- Row Two --> 
+<div class="photogrid" style="vertical-align: top">
+<div> <img class="rounded" src="art/image.jpg" height="auto" width="100%" loading="lazy"> </div>
+<div> <img class="rounded" src="art/goggles.jpg" height="auto" width="100%" loading="lazy"> </div>
+<div> <img class="rounded" src="art/gun2.jpg" height="auto" width="100%" loading="lazy"> </div>
+<div> <img class="rounded" src="art/exilevilify.jpg" height="auto" width="100%" loading="lazy"> </div>
+  
+ </div>
+ <!-- Row Three --> 
+<div class="photogridleft" style="vertical-align: top">
+<div> <img class="rounded" src="art/profile.jpg" height="auto" width="100%" loading="lazy"> </div>
+<div> <img class="rounded" src="art/owlks.jpg" height="auto" width="100%" loading="lazy"> </div>
+
+  
+ </div>
+
+ </main>
+ </div>
+            
+<footer id="footer" style="margin-top: 15px;"> 
+<h1 style="font-size: 15px; font-family: csoft; margin-top: 10px"> | Hosted by Github, formatted with Firefox | © Ari, 2025 | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1>
+</footer>
+</div>
+        
+       
+        <style>
+
+.photogrid {
+grid-auto-flow: row dense;
+display: grid;
+row-gap: 10px; 
+margin-right: 10px;
+grid-template-columns: 260px;
+width: 260px;
+float: left;
+}
+.photogridleft {
+grid-auto-flow: row dense;
+display: grid;
+margin-left: 0px;
+row-gap: 10px;  
+grid-template-columns: 260px;
+width: 260px;
+float: left;
+}
+
+.photogrid > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogrid > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+}
+.photogrid > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+.photogridleft > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogridleft > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+}
+.photogridleft > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.lighttext {
+  background-color: #dbc7a6;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+</style>
+
+  </body>
+</html>
