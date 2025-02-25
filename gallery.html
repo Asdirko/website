@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fish Eye</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
   </head>
   <body> 
   
@@ -16,50 +16,46 @@
 <div id="header" style="height: 100px; margin-top: 10px"  > 
 <br>
 <div id="logo">
-<h1 style="margin-left:40px; margin-top: 15px; font-size: 40px; font-family: Goudy"> Fish Eye </h1>
+<h1 style="margin-left:40px; margin-top: 15px; font-size: 40px; font-family: CameraObscura"> Art Gallery </h1>
 </div>
 
 </div> 
   <div id="headerArea">
    
     <nav id="navbar" style="margin-bottom: 15px;"><ul>
-      <li><a href="index.html" style="font-family: Goudy">Home </a></li>
-       <li><a href="gallery.html" style="font-family: Goudy">Gallery</a></li>
-       <li><a href="misc.html" style="font-family: Goudy">Misc</a></li>
-       <li><a href="links.html" style="font-family: Goudy">Links</a></li>
-       </ul></nav></div>
+      <li><a href="index.html" style="font-family: Goudy; margin-left: 50px;">Home </a></li>
+       <li><a href="gallery.html" style="font-family: Goudy; margin-left: 50px">Gallery</a></li>
+       <li><a href="misc.html" style="font-family: Goudy; margin-left: 50px">Misc</a></li>
+       <li><a href="links.html" style="font-family: Goudy; margin-left: 50px">Links</a></li>
+       </ul></nav></div> 
             <div id="flex">
-<main style="background-color: transparent; padding: 0px; height: auto">
-<div class="lighttext">
-<h1 style="font-family: Goudy; font-size: 20px; margin-bottom: 10px; margin-left: 10px;">~ Art Gallery ~</h1>
-</div>
+<main style="background-color: transparent; padding: 0px; height: auto; margin-top: 0px;">
+ 
  <!-- Row One -->
 <div class="photogrid" style="vertical-align: top">
-  <div> <img class="rounded" src="art/wander.jpg" height="auto" width="100%" loading="lazy"> </div>
-  <div> <img class="rounded" src="art/whitelady.jpg" height="auto" width="100%" loading="lazy"> </div>
+    <div> <img class="rounded" src="art/wander.jpg" height="auto" width="100%" loading="lazy"> </div>
+    <div> <img class="rounded" src="art/whitelady.jpg" height="auto" width="100%" loading="lazy"> </div>
  </div>
 <!-- Row Two --> 
 <div class="photogrid" style="vertical-align: top">
-<div> <img class="rounded" src="art/image.jpg" height="auto" width="100%" loading="lazy"> </div>
-<div> <img class="rounded" src="art/goggles.jpg" height="auto" width="100%" loading="lazy"> </div>
-<div> <img class="rounded" src="art/gun2.jpg" height="auto" width="100%" loading="lazy"> </div>
-<div> <img class="rounded" src="art/exilevilify.jpg" height="auto" width="100%" loading="lazy"> </div>
-  
+    <div> <img class="rounded" src="art/image.jpg" height="auto" width="100%" loading="lazy"> </div>
+    <div> <img class="rounded" src="art/goggles.jpg" height="auto" width="100%" loading="lazy"> </div>
+    <div> <img class="rounded" src="art/gun2.jpg" height="auto" width="100%" loading="lazy"> </div>
+    <div> <img class="rounded" src="art/exilevilify.jpg" height="auto" width="100%" loading="lazy"> </div>
  </div>
  <!-- Row Three --> 
 <div class="photogridleft" style="vertical-align: top">
 <div> <img class="rounded" src="art/profile.jpg" height="auto" width="100%" loading="lazy"> </div>
 <div> <img class="rounded" src="art/owlks.jpg" height="auto" width="100%" loading="lazy"> </div>
-
   
  </div>
 
  </main>
  </div>
             
-<footer id="footer" style="margin-top: 15px;"> 
-<h1 style="font-size: 15px; font-family: csoft; margin-top: 10px"> | Hosted by Github, formatted with Firefox | © Ari, 2025 | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1>
-</footer>
+<footernonstick id="footernonstick" style="margin-top: 15px;"> 
+<h1 style="font-size: 20px; font-family: Magic; margin-top: 10px"> | Hosted by Github, formatted with Firefox | © Ari, MMXXV | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1>
+</footernonstick>
 </div>
         
        
@@ -70,8 +66,8 @@ grid-auto-flow: row dense;
 display: grid;
 row-gap: 10px; 
 margin-right: 10px;
-grid-template-columns: 260px;
-width: 260px;
+grid-template-columns: 400px;
+width: 400px;
 float: left;
 }
 .photogridleft {
@@ -79,8 +75,8 @@ grid-auto-flow: row dense;
 display: grid;
 margin-left: 0px;
 row-gap: 10px;  
-grid-template-columns: 260px;
-width: 260px;
+grid-template-columns: 400px;
+width: 400px;
 float: left;
 }
 
@@ -121,6 +117,16 @@ float: left;
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+body {
+    background-color:#dbc7a6;
+    background-image: none;
+}
+#container {
+max-width: 1220px;
+margin: 0 auto;
+}
+
 </style>
 
   </body>
