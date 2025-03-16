@@ -41,6 +41,16 @@
               font-family: Magic;
               src: url('fonts/MagicalNight.ttf');
           }
+          @font-face {
+            font-family: gameboy;
+            src: url('fonts/gameboy.ttf');
+        }
+
+        @font-face {
+          font-family: C64;
+          src: url('fonts/C64.ttf');
+        }
+        
           
 body {
   margin: 0;
@@ -50,9 +60,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
-
 
 * {
    box-sizing: border-box;
@@ -150,9 +158,9 @@ mainphoto {
   align-items: center;
   position: fixed;
   left: 0;
-  bottom: 0;
-  
+  bottom: 0; 
 }
+
 footernonstick {
   display: flex;
   background-color: #dbc7a6;
@@ -162,17 +170,16 @@ footernonstick {
   border-radius: 5px 5px 5px 5px;
   justify-content: center;
   align-items: center;
-  
 }
 
 h1,
 h2,
 h3 {
-  color: #000000;
+color: #000000;
 }
 
 h1 {
-  font-size: 25px;
+font-size: 25px;
 }
 
 strong {
@@ -204,7 +211,7 @@ strong {
   padding: 10px;
   border-radius: 5px;
   height: 180px;
-   overflow: scroll;
+  overflow: scroll;
 }
             
 .narrow {
@@ -237,7 +244,7 @@ strong {
   padding: 10px;
   font-size: smaller;
   border-radius: 5px;
-   margin-top: 10px;
+  margin-top: 10px;
 }
 .thumbnail {
   
@@ -247,21 +254,15 @@ strong {
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-
-  
-  
 }
+
 .thumbnailmain {
-  
   width: 980px; 
   height: 170px;
   overflow: clip;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-
-  
-  
 }
 
 #topBar {
@@ -278,8 +279,10 @@ strong {
   display:block;
   transition:color 0.2s ease-in-out;
   }
+
+
 #hoverdiv li:hover a{
-  color: #008543;
+  color: #e0462e;
 }
 li {
   margin-left: 5px;
