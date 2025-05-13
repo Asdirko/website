@@ -14,9 +14,25 @@
                 src: url('fonts/Strasua.otf');
             }
             @font-face {
+              font-family: Mumbo;
+              src: url('fonts/MUMBSB__.TTF');
+          }
+            @font-face {
                 font-family: boc;
                 src: url('fonts/boc.otf');
             }
+            @font-face {
+              font-family: Taxon;
+              src: url('fonts/Taxon-Regular.otf');
+          }
+          @font-face {
+            font-family: TaxonBold;
+            src: url('fonts/Taxon-Bold.otf');
+        }
+        @font-face {
+          font-family: TaxonExtraBold;
+          src: url('fonts/Taxon-ExtraBold.otf');
+      }
           
             @font-face {
                 font-family: CameraObscura;
@@ -28,6 +44,10 @@
                 font-family: C64;
                 src: url('fonts/C64.ttf');
             }
+            @font-face {
+              font-family: Famifont;
+              src: url('fonts/FamifontBold-j8Oj.ttf');
+          }
             
             @font-face {
                 font-family: MT;
@@ -264,6 +284,15 @@ strong {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
+  
+  .lighttext {
+    background-color: #dbc7a6;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 
 #topBar {
   width: 100%;
