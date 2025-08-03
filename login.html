@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepwood Industries</title>
-     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   
 
@@ -49,13 +49,13 @@
     
     <div class="logo">
     <div class="crt">
-    <p style="font-family: C64; color: white"> Deepwood Industries </p>
+    <p style="font-family: Mumbo; color: lightblue"> Deepwood Industries </p>
     </div>
     </div>
 <div class="crt">
 <div class="center">
 
-<p style="font-family: C64; color: white; font-size: 15px"> Authorized Personnel Only. ©1997, 1998. </p>
+<p style="font-family: Mumbo; color: lightblue; font-size: 15px"> Authorized Personnel Only. ©1997, 1998. </p>
 
 <input style="font-family: C64; color: white; width: 450px; height: 25px; margin-right: 20px; background-color: black;" type="text" name="logsarchives" id="logsarchives" autocomplete="off" maxlength="12" placeholder="command line ready" onkeydown="redirect(this)">
     
@@ -72,6 +72,9 @@
   
   body {
     background-color: black;
+    background-image: none;
+    background-repeat: none;
+    
   }
   
   @keyframes flicker {
@@ -318,8 +321,8 @@ function redirect(ele) {
                 if(ele.value === 'whoami')
                      window.location.href = 'https://google.com';
                      
-                if(ele.value === 'fisheye1998')
-                     window.location.href = 'https://google.com';          
+                if(ele.value === 'directory1')
+                     window.location.href = 'https://brickset.com/';          
                 else
                     ;
             }

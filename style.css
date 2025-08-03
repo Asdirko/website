@@ -1,75 +1,99 @@
-@font-face {
-                font-family: csoft;
-                src: url('fonts/csoftbold.otf');
-            }
-            
-            @font-face {
-                font-family: csoft;
-                src: url('fonts/csoftbold.otf');
-                font-weight: bold;
-            }
-            
-            @font-face {
-                font-family: Strasua;
-                src: url('fonts/Strasua.otf');
-            }
-            @font-face {
-              font-family: Mumbo;
-              src: url('fonts/MUMBSB__.TTF');
-          }
-            @font-face {
-                font-family: boc;
-                src: url('fonts/boc.otf');
-            }
-            @font-face {
-              font-family: Taxon;
-              src: url('fonts/Taxon-Regular.otf');
-          }
-          @font-face {
-            font-family: TaxonBold;
-            src: url('fonts/Taxon-Bold.otf');
-        }
-        @font-face {
-          font-family: TaxonExtraBold;
-          src: url('fonts/Taxon-ExtraBold.otf');
-      }
-          
-            @font-face {
-                font-family: CameraObscura;
-                src: url('fonts/CameraObscura.otf');
-            }
-           
-           
-                @font-face {
-                font-family: C64;
-                src: url('fonts/C64.ttf');
-            }
-            @font-face {
-              font-family: Famifont;
-              src: url('fonts/FamifontBold-j8Oj.ttf');
-          }
-            
-            @font-face {
-                font-family: MT;
-                src: url('fonts/mt.otf');
-            }
-            @font-face {
-                font-family: Goudy;
-                src: url('fonts/Goudy.otf');
-            }
-            @font-face {
-              font-family: Magic;
-              src: url('fonts/MagicalNight.ttf');
-          }
-          @font-face {
-            font-family: gameboy;
-            src: url('fonts/gameboy.ttf');
-        }
 
-        @font-face {
-          font-family: C64;
-          src: url('fonts/C64.ttf');
-        }
+
+
+
+
+@font-face {
+font-family: csoft;
+src: url('fonts/csoftbold.otf');
+}
+            
+@font-face {
+font-family: csoft;
+src: url('fonts/csoftbold.otf');
+font-weight: bold;
+}
+            
+            
+@font-face {
+font-family: Strasua;
+src: url('fonts/Strasua.otf');
+}
+            
+@font-face {
+font-family: Mumbo;
+src: url('fonts/MUMBSB__.TTF');
+}
+            
+@font-face {
+font-family: boc;
+src: url('fonts/boc.otf');
+}
+           
+@font-face {
+font-family: Taxon;
+src: url('fonts/Taxon-Regular.otf');
+}
+          
+@font-face {
+font-family: TaxonBold;
+src: url('fonts/Taxon-Bold.otf');
+}
+        
+@font-face {
+font-family: TaxonExtraBold;
+src: url('fonts/Taxon-ExtraBold.otf');
+}
+          
+@font-face {
+font-family: FDBO;
+src: url('fonts/FuturaDemiBoldOblique.otf');
+}
+          
+@font-face {
+font-family: Poppins;
+src: url('fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+font-family: CameraObscura;
+src: url('fonts/CameraObscura.otf');
+}
+           
+           
+@font-face {
+font-family: C64;
+src: url('fonts/C64.ttf');
+}
+
+@font-face {
+font-family: Famifont;
+src: url('fonts/FamifontBold-j8Oj.ttf');
+}
+            
+@font-face {
+font-family: MT;
+src: url('fonts/mt.otf');
+}
+            
+@font-face {
+font-family: Goudy;
+src: url('fonts/Goudy.otf');
+}
+
+@font-face {
+font-family: Magic;
+src: url('fonts/MagicalNight.ttf');
+}
+          
+@font-face {
+font-family: gameboy;
+src: url('fonts/gameboy.ttf');
+}
+
+@font-face {
+font-family: C64;
+src: url('fonts/C64.ttf');
+}
         
           
 body {
@@ -83,7 +107,7 @@ body {
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
  #container {
