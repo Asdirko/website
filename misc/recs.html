@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Recommendations</title>
-    <link href="lightbox.css" rel="stylesheet" />
+    <link href="../lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-    <script src="lightbox-plus-jquery.js"></script>
+    <script src="../lightbox-plus-jquery.js"></script>
   </head>
   <body> 
   
@@ -38,7 +38,9 @@
 <a style="color: #ffffff; font-size: 30px; font-family: Goudy;"> ~ Books </a>
 
 
-<div class="rowtest">
+
+
+<div class="rowtest" style="margin-top: 20px">
   <div class="columntest">
   <a class="rounded" href="../covers/wg.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/wg.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
   </div>
@@ -48,6 +50,15 @@
   </div>
 </div> 
 
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/js.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/js.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">East Of Eden ~ John Steinbeck</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;"> Steinbeck's gift is his ability to turn the tales of ordinary people into grand epics. Case in point. 
+  </div>
+</div>
 
 </div>
 <!--Music-->
@@ -124,6 +135,26 @@
   </div>
   </div>
 <br>
+<!-- Movies-->
+<div class="borderdecor">
+<a style="color: #ffffff; font-size: 30px; font-family: Goudy;"> ~ Film </a>
+
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/isle_of_dogs.jpeg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/isle_of_dogs.jpeg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Isle Of Dogs ~ Wes Anderson</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;"> One of the more overshadowed entries in Wes's filmography, which is a shame because it has some striking shots and clever jokes, which complements the absurd the nature of the premise. </a>  
+  </div>
+  </div>
+
+  <br>
+
+
+
+
 <!-- Spare Parking Lot
 <div class="rowtest">
   <div class="columntest">
@@ -145,6 +176,8 @@
         
        
 <style>
+
+
   .columntest {
   float: left;
   width: 20.00%;
@@ -234,7 +267,7 @@ float: left;
 
 .borderdecor {
 border-radius: 5px;
-border-color: 10px;
+border-color: transparent;
 border-width: 3px;
 border-style: solid;
 padding: 10px;
