@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Recommendations</title>
+    <link href="../lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <script src="../lightbox-plus-jquery.js"></script>
+  </head>
+  <body> 
+  
+<!-- Header Area -->  
+ 
+<div id="container"> 
+
+<div id="header" style="height: 100px; margin-top: 0px; border-radius: 5px, 5px, 0px, 0px;"  > 
+<br>
+<div id="logo">
+<h1 style="margin-left:40px; margin-top: 0px; font-size: 50px; font-family: Magic; color: #ffffff;"> Media Recommendations</h1>
+</div>
+
+</div> 
+  <div id="headerArea">
+   
+    <nav id="navbar" style="margin-bottom: 15px;"><ul>
+      <li><a href="../index.html" style="font-family: Magic; margin-left: 30px; color: #ffffff; font-size: 25px;">~ Home</a></li>
+      
+       <li><a href="../misc.html" style="font-family: Magic; margin-left: 50px; color: #ffffff; font-size: 25px;">~ Back</a></li>
+       
+       </ul></nav></div> 
+            <div id="flex">
+<main style="background-color: rgb(0, 0, 0, 0.7); padding: 10px; height: auto; margin-top: -5px; color:#ffffff;">
+
+<!-- Books-->
+<div class="borderdecor">
+<a style="color: #ffffff; font-size: 30px; font-family: Goudy;"> ~ Books </a>
+
+
+
+
+<div class="rowtest" style="margin-top: 20px">
+  <div class="columntest">
+  <a class="rounded" href="../covers/wg.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/wg.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;"> The Westing Game ~ Ellen Raskin</a> <br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">Part mystery novel, part character study, incredibly satisfying. Turtle is a fun protaganist. </a>  
+  </div>
+</div> 
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/js.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/js.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">East Of Eden ~ John Steinbeck</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;"> Steinbeck's gift is his ability to turn the tales of ordinary people into grand epics. Case in point. 
+  </div>
+</div>
+
+</div>
+<!--Music-->
+<div class="borderdecor">
+<a style="color: #ffffff; font-size: 30px; font-family: Goudy;"> ~ Music  </a> 
+
+
+<div class="rowtest" style="margin-top: 20px;">
+  <div class="columntest">
+  <a class="rounded" href="../covers/BPC.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/BPC.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">A Beautiful Place Out In The Country ~ Boards Of Canada</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">Lo-fi electronic music that elicits a feeling of nostalgia and uneasiness. "Zoetrope" sounds like it could be the score to an unproduced nature documentary.  </a>  
+  </div>
+</div> 
+
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/Pacific.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/Pacific.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Pacific ~ Haruomi Hosono, Shigeru Suzuki, Tatsuro Yamashita</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">If summer was an album it would be this one.
+  </div>
+</div>
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/Kingcurtis.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/Kingcurtis.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">King Size Soul ~ King Curtis</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">The ultimate collection of feel-good jazz. Includes a cover of "A Whiter Shade Of Pale" that is better than the original, and "Memphis Soul Stew," which is among the catchier jazz songs recorded. </a>  
+  </div>
+</div> 
+
+<!-- Games-->
+</div> 
+<div class="borderdecor">
+<a style="color: #ffffff; font-size: 30px; font-family: Goudy;;"> ~ Games </a>
+
+
+<div class="rowtest" style="margin-top: 20px;">
+  <div class="columntest">
+  <a class="rounded" href="../covers/AnimalWell.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/AnimalWell.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Animal Well ~ Shared Memory</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">A cryptic Metroidvania that omits direct combat in favor of puzzle solving and unique platforming challenges. The sound design is on point, and the brilliant art direction lends itself perfectly to capturing an alien and surrel atmosphere. </a>  
+  </div>
+</div>
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/sable.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/sable.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Sable ~ Shedworks</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">A coming of age story set in the desert, with a beautiful artstyle reminiscent of the works of Moebius and Herge. </a>  
+  </div>
+  </div>
+<br>
+
+
+  <div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/outerwilds.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/outerwilds.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Outer Wilds ~ Mobius Digital</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;">An indie darling, but the praise is well deserved and well worth repeating. The satisfaction in deciphering the nature of the world and story is unmatched. The DLC is also worth your time if you enjoyed the base game. </a>  
+  </div>
+  </div>
+<br>
+<!-- Movies-->
+<div class="borderdecor">
+<a style="color: #ffffff; font-size: 30px; font-family: Goudy;"> ~ Film </a>
+
+
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers/isle_of_dogs.jpeg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/isle_of_dogs.jpeg" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;">Isle Of Dogs ~ Wes Anderson</a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;"> One of the more overshadowed entries in Wes's filmography, which is a shame because it has some striking shots and clever jokes, which complements the absurd the nature of the premise. </a>  
+  </div>
+  </div>
+
+  <br>
+
+
+
+
+<!-- Spare Parking Lot
+<div class="rowtest">
+  <div class="columntest">
+  <a class="rounded" href="../covers" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers" alt="image-1" height="auto" width="100%" loading="lazy" /></a>
+  </div>
+  <div class="columntest0">
+  <a style="color: #ffffff; font-size: 16px; font-family: Magic;"></a> <br><br> 
+  <a style="color: #ffffff; font-size: 13px; font-family: Magic;"></a>  
+  </div>
+-->
+
+ </main>
+ </div>
+           
+<footernonstick id="footernonstick" style="margin-top: 15px;"> 
+<h1 style="font-size: 17px; font-family: Magic; margin-top: 10px; color: #ffffff;"> | Hosted by Github, formatted with Firefox | © Ari, MMXXV | <u><a href="../credits.html" style="color: #ffffff;">Credits</a></u>, <u> <a href="../changelog.html" style="color: #ffffff">Changelog</a></u> |</h1>
+</footernonstick>
+</div>
+        
+       
+<style>
+
+
+  .columntest {
+  float: left;
+  width: 20.00%;
+  padding: 5px;
+  max-height: 250px;
+  overflow: clip;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+ .columntest0 {
+  float: left;
+  width: 80.00%;
+  padding: 5px;
+  max-height: 250px;
+  overflow: clip;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: -0px;
+}
+
+/* Clear floats after image containers */
+.rowtest::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.photogrid {
+grid-auto-flow: row dense;
+display: grid;
+row-gap: 10px; 
+margin-right: 10px;
+grid-template-columns: 400px;
+width: 400px;
+float: left;
+}
+.photogridleft {
+grid-auto-flow: row dense;
+display: grid;
+margin-left: 0px;
+row-gap: 10px;  
+grid-template-columns: 400px;
+width: 400px;
+float: left;
+}
+
+.photogrid > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogrid > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+  
+}
+.photogrid > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+.photogridleft > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogridleft > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+}
+.photogridleft > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.lighttext {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.borderdecor {
+border-radius: 5px;
+border-color: transparent;
+border-width: 3px;
+border-style: solid;
+padding: 10px;
+margin-bottom: 15px;
+background-color: rgba(0, 0, 0, 0.7); 
+}
+main {
+font-size: 15px;
+color: #ffffff;
+}
+a {
+letter-spacing: 0.2px;
+color: #ffffff;   
+}
+
+body {
+               
+margin: 0;
+background-size: 65px;
+color: #ffffff;
+background-image: url("../photography/DSC_3223.JPG");
+background-size: cover;
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+background-color: rgba(0, 0, 0, 0.3);   
+}
+
+#container {
+max-width: 700px;
+margin: 0 auto;
+}
+
+#header { 
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 175px;
+  background-image: none;
+  background-size: 100%;
+  background-position: left;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#navbar {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+}
+img {
+display: inline-block;
+}
+footernonstick {
+                display: flex;
+                 background-color: rgba(0, 0, 0, 0.7);
+                color: #ffffff;
+                width: 700px;
+                height: 40px;
+                padding: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                
+                border-radius: 5px 5px 5px 5px;
+                justify-content:center;
+                align-items:center;
+                
+            }
+
+</style>
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': false,
+    'disableScrolling': true,
+    'fadeDuration': 200,
+    'imageFadeDuration': 300,
+    'showImageNumberLabel': false,
+  })
+
+</script>
+</body>
+</html>
