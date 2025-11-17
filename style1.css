@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "DOS"; 
+  src: url('fonts/Px437_DOS-V_re_ANK24.woff2') format('woff2');
+}
+
+:root { 
+	font-size: 18px;
+	color-scheme: light dark;
+	accent-color: teal;
+}
+
+body {
+	color: black;
+	font-family: "DOS", "Courier New", Courier, monospace;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	-moz-font-smoothing: greyscale;
+}
+
+* { 
+	image-rendering: pixelated;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scrollbar-color: cadetblue gainsboro;
+	overscroll-behavior: none;
+}
+
+ul {
+	padding: 0px 10px 0px 20px;
+	margin: 0px;
+	text-align: left;
+}
+
+.border { 
+  border: 7px solid transparent;
+  background-color: rgb(255, 255, 255, 87%);
+	padding: 18px 36px;
+}
+	
+a.border:hover, a.border:focus { 
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAsElEQVQ4T7VVQQ7AIAib/3/0JktqagOiRjnphhVKwfJcsHIB8+lA32q4pFTjPV9u/2yv/u0sFuYAZz7A39jX1uqPfYvUA40AkcURUKQ7DepxpJxq5CmnAPVS9hTCdHEGP9daKHWIJDeqgVsoPZBFqlkuV38kwW1JcdTK6zFQNAFf0KXPXTLDa0TFsPc1Ve3/VKeRRCKJLUuKJRLRsA2qk2h5SkXzcTRTU05PvgBXnpMPNvIIJdPd95YAAAAASUVORK5CYII=") 7 /  7px / 0 round;
+}
+	
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid;
+}
+
+h3, h2, h1 { font-weight: normal; }
+
+h3 { font-size: 1.25rem; line-height: 1; font-style: italic; }
+h2 { font-size: 1.45rem; line-height: 1; text-transform: uppercase; }
+h1 { font-size: 2.75rem; line-height: 1; }
+		 
+p, ol, ul, dl, code, details { font-size: 1rem; line-height: 1.3; }
+		 
+h1, h2, h3, h4, h5, h6, p, table, details, cite, blockquote, hr {
+	margin: 18px 0;
+}
+
+ul, dl {
+	margin: 18px 0 18px 18px;
+}
+
+ol { margin: 18px 0 18px 54px; }
+ol ol { margin: 0 0 0 54px; }
+
+ul ul, dd { 
+	margin: 0 0 0 18px;
+}
+
+details p { margin: 18px 0 18px 36px; }
+
+summary { cursor: pointer; }
+
+ul { list-style-type: square; }
+
+code {
+	background-color: white;
+	font-family: 'DOS', monospace; 
+	font-size: 80%;
+	padding: 1px 4px;
