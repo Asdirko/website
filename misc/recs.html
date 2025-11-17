@@ -31,18 +31,18 @@
        
        </ul></nav></div> 
             <div id="flex">
-<main style="background-color: transparent; padding: 0px; height: auto; margin-top: 0px;">
+<main style="background-color: rgba(0, 0, 0, 0.5); padding: 0px; height: auto; margin-top: 0px;">
  
 <!-- H Row One-->
 
 <div class="midspantext" style="width: 100%; margin-top: 20px; margin-bottom: 20px;"> 
-<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Music  </a> 
+<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Games  </a> 
 </div>
 <div class ="floatbreak" style="background-color: transparent; margin-bottom: 20 px"> 
 <div class="rowtest">
 
 <div class="photogrid" style="vertical-align: top">
-    <div><a class="rounded" href="../covers/AnimalWell.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/AnimalWell.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a class="rounded" href="../covers/outerwilds.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/outerwilds.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
    </div>
 <div class="photogrid" style="vertical-align: top">
     <div><a class="rounded" href="../covers/AnimalWell.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/AnimalWell.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
@@ -57,6 +57,11 @@
     <div><a class="rounded" href="../covers/AnimalWell.jpg" data-lightbox="example-1" data-title=""><img class="rounded" src="../covers/AnimalWell.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
    </div>
 </div> 
+
+
+</div>
+
+<div class ="floatbreak" style="background-color: transparent; margin-bottom: 20px"> 
 
 <!-- H Row Two-->
 
@@ -91,7 +96,7 @@
 <!-- H Row Three-->
 
 <div class="midspantext" style="width: 100%; margin-top: 20px; margin-bottom: 20px;"> 
-<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Music  </a> 
+<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Books </a> 
 </div>
 <div class ="floatbreak" style="background-color: transparent; margin-bottom: 20px"> 
 <div class="rowtest">
@@ -117,7 +122,7 @@
 <!-- H Row Four-->
 
 <div class="midspantext" style="width: 100%; margin-top: 20px; margin-bottom: 20px;"> 
-<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Music  </a> 
+<a style="color: #ffffff; font-size: 40px; font-family: Goudy; margin-left: 20px;"> ~ Movies  </a> 
 </div>
 <div class ="floatbreak" style="background-color: transparent; margin-bottom: 20px"> 
 <div class="rowtest">
@@ -152,6 +157,10 @@
         
        
 <style>
+
+
+
+
 .rowtest::after {
   content: "";
   clear: both;
@@ -215,7 +224,7 @@ float: left;
 }
 
 .midspantext {
-background-color: rgba(0, 0, 0, 0.5);
+background-color: transparent;
 border-radius: 5px 5px 5px 5px;
 }
 body {
@@ -228,7 +237,7 @@ background-size: cover;
 background-repeat: no-repeat;
 
 background-attachment: fixed;
-background-color: rgba(0, 0, 0, 0.3);  
+background-color: rgba(0, 0, 0, 0.5 );  
 }
 #container {
 max-width: 1040px;
@@ -269,6 +278,51 @@ footernonstick {
   background-position: left;
   border-radius: 5px 5px 0px 0px;
 }
+
+.textgrid {
+grid-auto-flow: row dense;
+display: grid;
+row-gap: 10px; 
+margin-right: 10px;
+grid-template-columns: 200px;
+width: 200px;
+float: left;
+opacity: 1;
+}
+.textgridleft {
+grid-auto-flow: row dense;
+display: grid;
+margin-left: 0px;
+row-gap: 10px;  
+grid-template-columns: 200px;
+width: 200px;
+float: left;
+opacity: 1;
+}
+
+.textgrid > div {
+  background-color: transparent;
+  height: auto;
+  
+}
+.textgrid > div:hover {
+  opacity: 1;
+}
+.textgrid > div:hover a {
+  opacity: 1;
+}
+.textgridleft > div {
+  background-color: transparent;
+  height: auto;
+}
+  
+.textgridleft > div:hover {
+  opacity: 1;
+}
+.textgridleft > div:hover a {
+  opacity: 1;
+}
+
 </style>
 <script>
   lightbox.option({
