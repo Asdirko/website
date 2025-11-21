@@ -94,7 +94,15 @@ src: url('fonts/gameboy.ttf');
 font-family: C64;
 src: url('fonts/C64.ttf');
 }
-        
+     
+@font-face {
+font-family: Oceanside;
+src: url('fonts/Oceanside\ Typewriter.ttf');
+}
+@font-face {
+font-family: Sundori;
+src: url('fonts/Sundori.ttf');
+}
           
 body {
   margin: 0;
@@ -376,3 +384,4 @@ flex-wrap: wrap;
 }
 
 }
+
