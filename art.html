@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+  <html>
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
+    <script src="js/lightbox-plus-jquery.js"></script>
+  </head>
+
+  <body> 
+    
+    <div id="allcontaining"> 
+      <div id="header" style="height: 100px; margin-top: -10px;"  > 
+        <br>
+          <div id="logo">
+            <h1 style="margin-left:20px; margin-top: 10px; font-size: 40px; font-family: AG"><a href="index.html" style="text-decoration: none">Deer Mask Archive</a></h1>
+          </div>
+      </div> 
+      
+      <main>
+        <div id="bodyflexwrapper">
+          
+          <div id="maincontent">
+            <h1 style="font-family: AG; margin-top: 0px">Art</h1>
+            <p style="font-family: AG; margin-top: 5px"> All digital art drawn with a Wacom CTL-4100
+              <div class="photogrid" style="vertical-align: top">
+                <div><a href="assets/art/burningman.png" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/burningman.png" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+                <div><a href="assets/art/metroidcropped.png" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/metroidcropped.png" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+              
+              </div>
+
+              <div class="photogrid" style="vertical-align: top">
+                <div><a href="assets/art/fishdreams.png" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/fishdreams.png" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+                
+                <div><a href="assets/art/owlks.jpg" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/owlks.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+                <div><a href="assets/art/doubler.png" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/doubler.png" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+                
+              </div>
+
+              <div class="photogridleft" style="vertical-align: top">
+               <div><a href="assets/art/soldier.png" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/soldier.png" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+                <div><a href="assets/art/Shakra.jpg" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/art/Shakra.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+              </div>
+          </div>
+            
+          </div>
+
+          <div id="indexfooter">
+           <p style=" margin-left: 125px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
+          </div>
+        
+      </main>
+
+    </div>    
+  </body>
+
+<style>
+  .photogrid {
+  grid-auto-flow: row dense;
+  display: grid;
+  row-gap: 10px; 
+  margin-right: 10px;
+  grid-template-columns: 230px;
+  
+  float: left;
+}
+.photogridleft {
+  grid-auto-flow: row dense;
+  display: grid;
+  margin-left: 0px;
+  row-gap: 10px;  
+  grid-template-columns: 230px;
+  
+  float: right;
+}
+.photogrid > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogrid > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+  
+}
+.photogrid > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+.photogridleft > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogridleft > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+}
+.photogridleft > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+  #maincontent {
+    width: calc(100%);
+    max-width: 750px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    margin-right: 5px;
+  }
+  #sidebar {
+    width: 240px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    }
+  
+  #scrollbox {
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: #faebcc;
+    background-color: #dbc7a6;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #faebcc;
+    padding: 5px;
+  }
+  #scrollbox p{
+    font-size: 12px;
+    font-family: AG, serif;
+  }
+  #buttonflexwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  #buttondisplay {
+    width: calc((100% / 3) - 5px);
+    margin: 2.5px;
+  }
+  #buttondisplay img{
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+  }
+  #graphicdisplay img{
+    object-fit: cover;
+    width: 240px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #indexfooter {
+    max-width: 750px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    padding: 0px;
+  }
+
+  #indexfooter p{
+    font-size: 12px;
+    font-family: AG, serif;
+    margin-left: 5px;
+  }
+  li{
+    font-family: AG;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }         /* Unvisited link  */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  } /* Visited link    */
+  a:hover {
+    color:#2596be;
+    text-decoration: none;
+  }   /* Mouse over link */
+  a:active {
+    color:#008543;
+    text-decoration: none;
+  }  /* Selected link   */
+
+  
+
+
+  body {
+    background-image: url("assets/webassets/river.png");
+    background-size: cover;
+    background-position: fixed;
+    
+  }
+</style>
+
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': false,
+    'disableScrolling': true,
+    'fadeDuration': 200,
+    'imageFadeDuration': 300,
+    'showImageNumberLabel': false,
+  })
+
+</script>
+</html>

@@ -1,0 +1,152 @@
+
+@font-face {
+font-family: Windows;
+src: url('../assets/fonts/Windows\ Regular.ttf');
+}
+@font-face {
+font-family: AG;
+src: url('../assets/fonts/AppleGaramond.ttf');
+}
+@font-face {
+font-family: AGBold;
+src: url('../assets/fonts/AppleGaramond-Bold.ttf');
+}
+@font-face {
+font-family: Gameboy;
+src: url('../assets/fonts/gameboy.ttf');
+}
+             
+          
+
+
+
+  body {
+  background-attachment: fixed;
+  }   
+
+
+
+ #allcontaining {
+  max-width: 750px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 5px 5px 5px 5px;
+  
+}
+
+#bodyflexwrapper {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+}
+
+
+
+#header { 
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 125px;
+  background-image:url('../assets/webassets/header.png');
+  background-size: 100%;
+  background-position: left;
+  
+}
+
+
+
+
+main {
+  background-color:  #dbc7a6;
+  padding: 5px;
+  border-radius: 0px, 0px, 5px, 5px;
+  height: auto;
+}
+
+ footer {
+  display: flex;
+  background-color: #dbc7a6;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0; 
+}
+
+footernonstick {
+  display: flex;
+  background-color: #dbc7a6;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px 5px 5px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+color: #000000;
+}
+
+h1 {
+font-size: 25px;
+}
+
+strong {
+  color: #000000;
+}
+
+.box {
+  background-color: #dbc7a6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.box2 {
+  background-color: #faebcc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todobox {
+  background-color: #dbc7a6;
+  height: 105px;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+            
+          
+.narrow {
+  float: right;
+  width: 250px;
+  background: #faebcc;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+            
+.wide {
+  float: left;
+  width: calc(100% - 250px);
+  background: #faebcc;
+  height: 168px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.logo {
+  height:100%;
+  position: absolute;
+  top: 15px;
+  left: 15%;
+}
+          
+
+
+
+

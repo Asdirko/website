@@ -1,127 +1,104 @@
 <!DOCTYPE html>
-<html>
+  <html>
+    
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
-    <link href="lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <script src="lightbox-plus-jquery.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
+    <script src="js/lightbox-plus-jquery.js"></script>
   </head>
+
   <body> 
-  
-<!-- Header Area -->  
- 
-<div id="container"> 
-
-<div id="header" style="height: 100px; margin-top: 10px"  > 
-<br>
-<div id="logo">
-<h1 style="margin-left:40px; margin-top: 0px; font-size: 60px; font-family: FDBO; color: #ffffff;">/ Photo Gallery /</h1>
-</div>
-
-</div> 
-  <div id="headerArea">
-   
-    <nav id="navbar" style="margin-bottom: 15px;"><ul>
-      <li><a href="index.html" style="font-family: FDBO; margin-left: 30px; color: #ffffff; font-size: 25px;">/ Home /</a></li>
+    
+    <div id="allcontaining"> 
+      <div id="header" style="height: 100px; margin-top: -10px;"  > 
+        <br>
+          <div id="logo">
+            <h1 style="margin-left:20px; margin-top: 10px; font-size: 40px; font-family: AG"><a href="index.html" style="text-decoration: none">Deer Mask Archive</a></h1>
+          </div>
+      </div> 
       
-       <li><a href="misc.html" style="font-family: FDBO; margin-left: 50px; color: #ffffff; font-size: 25px;">/ Back /</a></li>
-       
-       </ul></nav></div> 
-            <div id="flex">
-<main style="background-color: transparent; padding: 0px; height: auto; margin-top: 0px;">
- 
- <!-- Row One -->
-
-
-<div class="photogrid" style="vertical-align: top">
-  <div><a class="rounded" href="photography/DSC_2973.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2973.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3218.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3218.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3400.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3400.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3489.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3489.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3523.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3523.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3271.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3271.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3504.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3504.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_2891.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2891.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3613.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3613.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3570.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3570.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3676.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3676.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3708.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3708.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  
- </div>
-
+      <main>
+        <div id="bodyflexwrapper">
+          
+          <div id="maincontent">
+            <h1 style="font-family: AG; margin-top: 0px">Photography</h1>
+            <p style="font-family: AG; margin-top: 5px">All photos taken with a Sony DSC P-73 and a Nikon D-7000</p>
+             
+          
+    <div class="photogrid" style="vertical-align: top">
+    <div><a href="assets/photography/jellyswarm.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/jellyswarm.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/coupling.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/coupling.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/animalwell.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/animalwell.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/lighthouse.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/lighthouse.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/totem.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/totem.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/iron.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/iron.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/imposingtotem.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/imposingtotem.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+   
+  </div>
 
 <!-- Row Two --> 
-<div class="photogrid" style="vertical-align: top">
-  <div><a class="rounded" href="photography/DSC_3332.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3332.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_2901.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2901.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3392.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3392.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3498.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3498.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3414.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3414.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3329.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3329.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3429.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3429.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3158.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3158.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3440.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3440.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3706.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3706.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div> 
-  <div><a class="rounded" href="photography/DSC_3331.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3331.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_2968.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2968.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3765.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3765.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3054.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3054.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3461.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3461.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3739.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3739.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+  <div class="photogrid" style="vertical-align: top">
+    <div><a href="assets/photography/stoplight.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/stoplight.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/jitteringlight.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/jitteringlight.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/intertidal.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/intertidal.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/skytrees.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/skytrees.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/neonroute66.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/neonroute66.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/liminal.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/liminal.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/birdsandtide.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/birdsandtide.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/oilsigns.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/oilsigns.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/railsignal.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/railsignal.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
   
- </div>
+  </div>
 
 
- <!-- Row Three --> 
-<div class="photogridleft" style="vertical-align: top">
-  <div><a class="rounded" href="photography/DSC_3298.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3298.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div> 
-  <div><a class="rounded" href="photography/DSC_3320.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3320.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3147.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3147.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_2884.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2884.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3209.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3209.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3184.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3184.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3359.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3359.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_2943.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_2943.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3703.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3703.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3715.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3715.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3721.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3721.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  <div><a class="rounded" href="photography/DSC_3647.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img class="rounded" src="photographyc/DSC_3647.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-  
-</div>
+<!-- Row Three --> 
+  <div class="photogridleft" style="vertical-align: top">
+    <div><a href="assets/photography/typewriter.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/typewriter.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/warehouse.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/warehouse.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/tugboat.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/tugboat.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/lynchianwaterfall.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/lynchianwaterfall.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/markuscloseup.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/markuscloseup.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/animalcrossing.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/animalcrossing.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/neonusedcars.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/neonusedcars.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+    <div><a href="assets/photography/operatorboard.JPG" loading="lazy" data-lightbox="example-1" data-title=""><img src="assets/photography/operatorboard.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
+   
+  </div>
+          </div>
+            
+          </div>
 
- </main>
- </div>
-         <!-- <div><a class="rounded" href="photography/DSC_2943.JPG" data-lightbox="example-1" data-title=""><img class="rounded" src="photography/DSC_2943.JPG" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>-->  
-<footernonstick id="footernonstick" style="margin-top: 15px;"> 
-<h1 style="font-size: 20px; font-family: FDBO; margin-top: 10px; color: #ffffff;"> | Hosted by Github, formatted with Firefox | © Ari, MMXXV | <u><a href="credits.html" style="color: #ffffff;">Credits</a></u>, <u> <a href="changelog.html" style="color: #ffffff">Changelog</a></u> |</h1>
-</footernonstick>
-</div>
+          <div id="indexfooter">
+           <p style=" margin-left: 125px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
+          </div>
         
-       
-<style>
+      </main>
 
-.photogrid {
-grid-auto-flow: row dense;
-display: grid;
-row-gap: 10px; 
-margin-right: 10px;
-grid-template-columns: 400px;
-width: 400px;
-float: left;
+    </div>    
+  </body>
+
+<style>
+  .photogrid {
+  grid-auto-flow: row dense;
+  display: grid;
+  row-gap: 10px; 
+  margin-right: 10px;
+  grid-template-columns: 230px;
+  
+  float: left;
 }
 .photogridleft {
-grid-auto-flow: row dense;
-display: grid;
-margin-left: 0px;
-row-gap: 10px;  
-grid-template-columns: 400px;
-width: 400px;
-float: left;
+  grid-auto-flow: row dense;
+  display: grid;
+  margin-left: 0px;
+  row-gap: 10px;  
+  grid-template-columns: 230px;
+  
+  float: right;
 }
-
 .photogrid > div {
   background-color: transparent;
   height: auto;
@@ -149,74 +126,113 @@ float: left;
   transform: scale(0.8, 0.8);
   transform-origin: center;
 }
+  #maincontent {
+    width: calc(100%);
+    max-width: 750px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    margin-right: 5px;
+  }
+  #sidebar {
+    width: 240px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    }
+  
+  #scrollbox {
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: #faebcc;
+    background-color: #dbc7a6;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #faebcc;
+    padding: 5px;
+  }
+  #scrollbox p{
+    font-size: 12px;
+    font-family: AG, serif;
+  }
+  #buttonflexwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  #buttondisplay {
+    width: calc((100% / 3) - 5px);
+    margin: 2.5px;
+  }
+  #buttondisplay img{
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+  }
+  #graphicdisplay img{
+    object-fit: cover;
+    width: 240px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #indexfooter {
+    max-width: 750px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    padding: 0px;
+  }
 
-.rounded {
-  border-radius: 5px;
-}
+  #indexfooter p{
+    font-size: 12px;
+    font-family: AG, serif;
+    margin-left: 5px;
+  }
+  li{
+    font-family: AG;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }         /* Unvisited link  */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  } /* Visited link    */
+  a:hover {
+    color:#2596be;
+    text-decoration: none;
+  }   /* Mouse over link */
+  a:active {
+    color:#008543;
+    text-decoration: none;
+  }  /* Selected link   */
 
-.lighttext {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
+  
 
 
-
-            body {
-               
-                margin: 0;
-                background-size: 65px;
-                color: #000000;
-                background-image: none;
-
-                background-size: cover;
-                background-repeat: no-repeat;
-                border: 5px #e6e9ed;
-                background-attachment: fixed;
-                background-color: lightblue;
-                
-                
-            }
-#container {
-max-width: 1220px;
-margin: 0 auto;
-}
-
-#header { 
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 175px;
-  background-image: none;
-  background-size: 100%;
-  background-position: left;
-  border-radius: 5px 5px 0px 0px;
-}
-
-#navbar {
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  border-radius: 0px 0px 5px 5px;
-}
-
-footernonstick {
-                display: flex;
-                 background-color: rgba(0, 0, 0, 0.3);
-                color: #ffffff;
-                width: 1225px;
-                height: 40px;
-                padding: 5px;
-                margin-left: auto;
-                margin-right: auto;
-                
-                border-radius: 5px 5px 5px 5px;
-                justify-content:center;
-                align-items:center;
-                
-            }
-
+  body {
+    background-image: url("assets/webassets/river.png");
+    background-size: cover;
+    background-position: fixed;
+    
+  }
 </style>
+
 <script>
   lightbox.option({
     'resizeDuration': 200,
@@ -229,5 +245,4 @@ footernonstick {
   })
 
 </script>
-</body>
 </html>

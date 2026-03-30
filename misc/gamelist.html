@@ -1,145 +1,371 @@
 <!DOCTYPE html>
-<html>
+  <html>
+    
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Journal</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <title>Gamelist</title>
+    <link href="../css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/webassets/favicon.png">
+    <script src="js/lightbox-plus-jquery.js"></script>
   </head>
+
   <body> 
-  
-<!-- Header Area -->  
- 
-<div id="container"> 
-
-<div id="header" style="height: 100px; margin-top: 10px"  > 
-<br>
-<div id="logo">
-<h1 style="margin-left:40px; margin-top: 15px; font-size: 40px; font-family: CameraObscura"> Game Journal</h1>
-</div>
-
-</div> 
-  <div id="headerArea">
-   
-    <nav id="navbar" style="margin-bottom: 15px;"><ul>
-      <li><a href="../index.html" style="font-family: Goudy; margin-left: 50px;">Home </a></li>
-       <li><a href="../gallery.html" style="font-family: Goudy; margin-left: 50px">Art</a></li>
-       <li><a href="../misc.html" style="font-family: Goudy; margin-left: 50px">Misc</a></li>
-       <li><a href="../links.html" style="font-family: Goudy; margin-left: 50px">Links</a></li>
-       </ul></nav></div> 
-            <div id="flex">
-<main style="height: auto; background-color: #dbc7a6;">
+    
+    <div id="allcontaining"> 
+      <div id="header" style="height: 100px; margin-top: -10px;"  > 
+        <br>
+          <div id="logo">
+            <h1 style="margin-left:20px; margin-top: 10px; font-size: 40px; font-family: AG"><a href="../index.html" style="text-decoration: none">Deer Mask Archive</a></h1>
+          </div>
+      </div> 
       
-                 <p style="font-family: csoft; margin-top: 5px; margin-bottom: 15px; font-size: 14px"> ~ 2023 ~
+      <main>
+        <div id="bodyflexwrapper">
+          
+          <div id="maincontent">
+                <details>
+                <summary> ~ 2023 ~</summary>
+                  <div id="sumwrapper">    
+                    <li> <i> Portal </i> </li>
+                    <li> <i> Portal 2 </i> </li>
+                    <li> <i> Hollow Knight</i> </li>
+                    <li> <i> Super Metroid</i> </li>
+                    <li> <i> Earthbound</i> </li>
+                    <li> <i> Metroid Fusion</i> </li>
+                    <li> <i> Metroid Zero Mission</i> </li>
+                    <li> <i> Mother 3</i> </li>
+                  </div>
+                </details>
 
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Portal </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Portal 2 </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Hollow Knight</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Super Metroid</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Earthbound</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Metroid Fusion</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Metroid Zero Mission</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Mother 3</i> </li>
-                 
-                <p style="font-family: csoft; margin-top: 15px; margin-bottom: 15px; font-size: 14px"> ~ 2024 ~
-                 
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Donkey Kong Country</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> The Legend Of Zelda: A Link To The Past</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> The Legend Of Zelda: Link's Awakening</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> The Legend Of Zelda: Ocarina Of Time</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Mario Kart DS</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Super Mario RPG</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Chrono Trigger</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Deltarune Ch. 1 & 2</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Celeste </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>F-Zero </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Yoshi's Island </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Outer Wilds </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>AM2R </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Wipeout 2097</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Metroid (NES) </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Metal Gear Solid </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>The Stanley Parable</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>The Legend Of Zelda: The Minish Cap </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Kirby Super Star </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Outer Wilds: Echoes Of The Eye</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Wipeout Pure </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Wip3out: Special Edition</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>The Looker </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Dr Langeskov, The Tiger, And The Terribly Cursed Emerald: A Whirlwind Heist </i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Starfox 2</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Mario Kart Wii</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Mario Kart 7</i> </li>
-                 <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Mario Kart 8</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Captain Toad Treasure Tracker</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half Life 2</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half Life 2: Episode 1</i> </li>
+                <details>
+                <summary> ~ 2024 ~ </summary>
+                  <div id="sumwrapper">    
+                    <li> <i> Donkey Kong Country</i> </li>
+                    <li> <i> The Legend Of Zelda: A Link To The Past</i> </li>
+                    <li> <i> The Legend Of Zelda: Link's Awakening</i> </li>
+                    <li> <i> The Legend Of Zelda: Ocarina Of Time</i> </li>
+                    <li> <i> Mario Kart DS</i> </li>
+                    <li> <i> Super Mario RPG</i> </li>
+                    <li> <i> Chrono Trigger</i> </li>
+                    <li> <i>Deltarune Ch. 1 & 2</i> </li>
+                    <li> <i>Celeste </i> </li>
+                    <li> <i>F-Zero </i> </li>
+                    <li> <i>Yoshi's Island </i> </li>
+                    <li> <i>Outer Wilds </i> </li>
+                    <li> <i>AM2R </i> </li>
+                    <li> <i> Wipeout 2097</i> </li>
+                    <li> <i>Metroid (NES) </i> </li>
+                    <li> <i>Metal Gear Solid </i> </li>
+                      <p>Phenomenal presentation, (esp. for the time,) great art direction and lots of good stealth gameplay. Back half is more bossfights and setpieces, which I didn't like as much as the first, but still fun. Does feel like im missing something though, thought the game was just ok most of the time so do want to replay and see if I'll gain a new perspective.</p>
+                    <li> <i>The Stanley Parable</i> </li>
+                    <li> <i>The Legend Of Zelda: The Minish Cap </i> </li>
+                      <p>Great presentation, very unique among 2D Zeldas. Shrinking system is veey cute, wish it was more player directed so that emergent gameplay could occur, a la Link to the Past. Didn't think kinstones were a good addition, although aesthetically I love them. </p>
+                    <li> <i>Kirby Super Star </i> </li>
+                    <li> <i>Outer Wilds: Echoes Of The Eye</i> </li>
+                      <p> Proves that Outer Wilds wasn't just dumb luck or lightning in a bottle, devs know the recipe and how to cook with it. Compliments the main game really well while also not just reheating leftovers; the DLC know how make itself stand on it's own merits. The ending broke my heart.</p>
+                    <li> <i>Wipeout Pure </i> </li>
+                      <p> Also a lot of fun. If I had a psp this is the game I'd be taking everywhere. </p>
+                    <li> <i>Wipeout 3</i> </li>
+                      <p> I think racing games can be divided onto a graph with skill ceilings on one axis and car-realism on the other (this is a terrible way to categorize a genre.) Wipeout firmly lands on high skill ceiling, sort-of realistic. I think Wipeout 3 is my favorite in the Wipeout series, feels like a natural evolution of 2097 with more veichles and whatnot. Probably also the hardest game in the series from what I've seen. </p>
+                    <li> <i>The Looker </i> </li>
+                    <li> <i>Dr Langeskov, The Tiger, And The Terribly Cursed Emerald: A Whirlwind Heist </i> </li>
+                    <li> <i>Starfox 2</i> </li>
+                    <li> <i>Mario Kart Wii</i> </li>
+                    <li> <i>Mario Kart 7</i> </li>
+                    <li> <i>Mario Kart 8</i> </li>
+                    <li> <i> Captain Toad Treasure Tracker</i> </li>
+                      <p> Simple fun, compact levels. Not the hardest game nor the most memorable, but a very charming breath of fresh air. </p>
+                    <li> <i> Half Life 2</i> </li>
+                      <p> I'm not sure I have anything to add to the conversation here. Half Life 2 is awesome, but you already knew that.</p>
+                    <li> <i> Half Life 2: Episode 1</i> </li>
+                      <p>Not a bad game but probably weakest in the Half-Life  series. Feels like a sequence of gimmicks rather than an evolution of HL2's formula. Underground garage sequence is the best part of the game, citadel re-entry feels contrived to justify supercharged gravity gun mechanics which aren't that interesting to begin with. </p>
+                  </div>
+                </details>
                 
-                <p style="font-family: csoft; margin-top: 15px; margin-bottom: 15px; font-size: 14px"> ~ 2025 ~
-                
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half Life 2: Episode 2</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Sable</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Metroid Prime</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Firewatch</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Final Fantasy VI</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Transistor</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Undertale</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Tunic</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Metroid Prime 2: Echoes</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half Life</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Balatro</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half-Life: Opposing Force</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Half-Life: Blue Shift</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> OFF</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Metroid Prime 3: Corruption</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Animal Well</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Black Mesa</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Bioshock</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Gris</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Kona</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Ufo 50</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Hollow Knight: Silksong</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Bioshock Infinite</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Hyper Light Drifter</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Journey</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Super Smash Brothers Ultimate</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i> Mario Kart Double Dash</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Bioshock 2</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Metal Gear Solid 2: Sons Of Liberty</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Metroid Prime 4: Beyond</i> </li>
+                <details>
+                <summary> ~ 2025 ~</summary>
+                  <div id="sumwrapper">
+                    <li> <i> Half Life 2: Episode 2</i> </li>
+                      <p> Big step up from ep1, essentially a microcosm of everything that makes base HL2 great. Hunters are fun to fight in a way that no other HL enemy is. </p>
+                    <li> <i> Sable</i> </li>
+                      <p>Game grew on me, by the end I can call it one of my favorites. Has a lot of heart, feels very genuine and personal. Ambience and atmosphere combined with the art direction makes it an unforgettable experience. Lacking in polish in some areas but low stakes makes it more forgivable.</p>
+                    <li> <i> Metroid Prime</i> </li>
+                      <p> A classic, can see why people place it with Super. Music is great, areas are distinct and memorable. Backtracking through magmoor caverns gets old, bosses are a little weak. Upgrades, especially optional beam ones, are super fun to find. Visors are genius.</p>
+                    <li> <i> Firewatch</i> </li>
+                      <p> Not much of a "game" but what is a video game really. Voice acting is great and leads have good chemistry which is often quite rare. Story is gripping, explores loneliness and responsibility in a way that hit me personally. Made me feel things, which I consider a compliment.</p>
+                    <li> <i> Final Fantasy VI</i> </li>
+                      <p>Long, beautiful, epic. People compare it to Chrono Trigger but it's kind of it's own thing. Espers are a fun way to encourage player expression. Opening setpiece in Narshe is phenomenal. Cast is interesting, game's all the more effective with the tone switch/trope inversion halfway through. Gathering your party back together after the cataclysm is one of the game's high points.</p>
+                    <li> <i> Transistor</i> </li>
+                      <p> Meshing Gustaf Klimt art nouveau with robots is stupidly creative. I think the game's too vague with many of the plot points, you really have to read between the lines to even make a guess to what's going on. This would be fine in a game that wasn't so narrative driven, but here it feels awkward. Death system is incredible design.</p>
+                    <li> <i> Undertale</i> </li>
+                      <p>I think I've absorbed too much of this game through pop culture osmosis. Don't have a bad thing to say about it other than I forgot about as soon as I finished playing. </p>
+                    <li> <i> Tunic</i> </li>
+                      <p> Depth of the game surprised me, seemed to change genres as it went on. Plays with expectations in a way that doesn't feel cheap or gratuitory. Nails sense of wonder and curiosity more than any other game I've played besides Outer Wilds maybe. Music slaps, house is an interesting genre to pick in favor of something more inoffensive. Easy top 5.</p>
+                    <li> <i> Metroid Prime 2: Echoes</i> </li>
+                      <p> Probably my favorite of the OG trilogy. Bossfights are a big improvement, like that the luminoth are directly involved/saved by events of the story. Areas are less distinctive than in Prime 1 but feel more creative, bactracking is forced less but rewarded more. Quadraxis is very memorable, also makes great use of all your abilities. A few absurd difficulty spikes (Boost-ball guardian.)</p>
+                    <li> <i> Half Life</i> </li>
+                      <p> Gordon doesn't need to hear all this, he's a highly trained professional!</p>
+                    <li> <i> Balatro</i> </li>
+                      <p>More addictive than crack. DNA is my favorite joker.</p>
+                    <li> <i> Half-Life: Opposing Force</i> </li>
+                      <p>Decent? Most of the new weapons feel gimmicky, end boss is pretty weak. Lots of good moments in between the more annoying setpieces (sewer section, pit worm).</p>
+                    <li> <i> Half-Life: Blue Shift</i> </li>
+                      <p>Essentially just a vanilla map pack but a pretty good one nonetheless. </p>
+                    <li> <i> OFF</i> </li>
+                      <p>Stunning presentation and atmosphere coupled with gameplay that is forgettable or mildly annoying. Pepper steak rocks.</p>
+                    <li> <i> Metroid Prime 3: Corruption</i> </li>
+                      <p> Played on primehack, want to play on OG hardware and see if that changes my opinion. Game is good for what it is but lacks the bite of the previous two. Pirate Homeworld gets close to those feeling, other planets feel a bit too linear. Feels very Halo-esque in some story moments (intro.) Skytown is phenomenal, the GFS Valhalla is a fun horror setpiece. Phazon mode (I forget the name) breaks a lot of the combat encounters.</p>
+                    <li> <i> Animal Well</i> </li>
+                      <p> Atmosphere feels very unique, the concept of a Metroidvania without combat is really cool. Love how crazy the puzzles get.</p>
+                    <li> <i> Black Mesa</i> </li>
+                      <p>Different tone than the og but I like they had their own vision. Levels are overstuffed, pacing isn't great all through the game. HECU ai feels a little too accurate, moving while shooting is a big departure from the og which I don't think was justified. Xen levels are an inspired reimagining but suffer the same pacing issue. Most of the game's problems could be solved with an editor to cut out the fluff (see: surface tension.) </p>
+                    <li> <i> Bioshock</i> </li>
+                      <p>Incredible intro setpiece, great plot twist, I like how Rapture is explored in many different districts that flesh out the image of what the society was like. Upgrade system is great, hacking and photography a little "stiff". Final boss is laughably inept. </p>
+                    <li> <i> Gris</i> </li>
+                      <p>I wanted to like this one so much, but it feels like the video game equivalent of driving a cinder block. Last level starts to play with some mildly interesting ideas but it's over before they can do anything with it. Story is such a vague analogy for trauma/depression etc. that it lacks any emotional connection, feels like it's afraid to explore it's own themes or say something real.</p>
+                    <li> <i> Kona</i> </li>
+                      <p> Wanted something that would give me firewatch vibes and this delivered. Depiction of French Canadian culture very unique, mystery has a great premise. Finer details of the mystery are pretty convoluted, end sequence feels rushed, game is a little rough around the edges but has a lot of heart.   </p>
+                    <li> <i> Hollow Knight: Silksong</i> </li>
+                      <p>Easily lands in the top 5. I cannot believe a team of four-ish people made this game, it's absolutely enormous and all extremely polished. Boss designs are nuts, areas are super creative and more cohesive than hollow knight imo. Hornet may be the first protaganist in video game history to have dialogue that isn't immersion breaking or corny.</p>
+                    <li> <i> Bioshock Infinite</i> </li>
+                      <p>A big beautiful mess. Can respect it for it's ambitions but the final product is just ok. Art direction is fantastic, setting is very inspired and arguably the best part of the game. Lacks decision-making or nuance of previous games. Plot has more holes than a sponge. DLC is awful; chock full of retcons, pandering, and godawful writing.   </p>
+                    <li> <i> Hyper Light Drifter</i> </li>
+                      <p>Combat system is very tight and fluid, hitstun is pretty annoying and leads to some cheap deaths. Pixel art and music are on another level, story is vague but very intriguing. A game where it feels good to get good. </p>
+                    <li> <i> Journey</i> </li>
+                      <p>Short and sweet, not much depth but it moves quickly enough that it doesn't really matter. Small details make a big difference. Joy in movement.</p>
+                    <li> <i> Super Smash Brothers Ultimate</i> </li>
+                      <p>Ultimate couch fighter. It's smash, it's awesome.</p>
+                    <li> <i> Mario Kart Double Dash</i> </li>
+                      <p>Chaotic and experimental, two player gimmick makes it stand out from other mario karts. </p>
+                    <li> <i>Bioshock 2</i> </li>
+                      <p>Not as good as Bioshock's story or presentation but a big step up gameplay wise and probably more replayable. Levels are great in isolation but are poorly stitched together, Lamb is charismatic but her motivations and ideology feel a little shoehorned. Elenor is great, I felt genuine pride at the end.</p>
+                    <li> <i>Metal Gear Solid 2: Sons Of Liberty</i> </li>
+                      <p>Took me a little while to get hooked on this one but it was worth it. Absolute mindfuck of a game that got better as I played. Don't understand a single plot point but that's probably intentional. Snake is awesome.</p>
+                    <li> <i>Metroid Prime 4: Beyond</i> </li>
+                      <p>Beautiful game that obviously suffered from a rough development cycle. Open world hub is insulting bad, green crystals are the worst mechanic/sequence in any prime game. No new power-ups, NPCS are poorly written, lack of originality in both areas and progression, level design is incredibly linear and lacking a lot of the verticality from past primes. There's like two enemy types in the entire game. VIOLA is a neat idea (Speed booster analogue?) but implemented terribly.</p>
+                  </div>
+                </details>
 
-                 <p style="font-family: csoft; margin-top: 15px; margin-bottom: 15px; font-size: 14px"> ~ 2026 ~
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Pacific Drive</i> </li>
-                <li style="font-family: csoft; margin-top: 5px; margin-bottom: 5px; font-size: 14px"> <i>Halo: Combat Evolved</i> </li>
-                
-              </div>
+                <details>
+                <summary> ~ 2026 ~ </summary>
+                  <div id="sumwrapper">    
+                    <li> <i>Pacific Drive</i> </li>
+                      <p>Incredible atmosphere, entertaining characters, great progression. Decorating the car is a game in and of itself. Knows what it wants to be and keeps the gameplay loop simple and engaging. Depth of environmental interactions is a nice surprise and feels almost im-sim like at times. Little anticlimactic towards the end. </p>
+                    <li> <i>Halo: Combat Evolved</i> </li>
+                      <p>Maybe just not my thing? Didn't hate it but after Bioshock Infinite maybe I just don't like dual weapons/regenerating health trope. Felt like a lot of cool moments narratively and level wise but not very cohesive in terms of the larger picture. Two betrayals is pretty garbage, and the reuse of level geometry gets old really fast. Wish I liked it more but glad I played it. </p>
+                    <li> <i>Disco Elysium</i> </li>
+                      <p>A lot of reading, but superb writing and vo. World is very engrossing, was a lot funnier than I expected because I thought this was a very serious game. Whoever created Kim Kitsuragai needs a reward. </p>
+                    <li> <i>Super Mario Galaxy</i> </li>
+                      <p>Feels like I understand the appeal of 3D Mario now, game took a while to get me hooked but got me hooked good. Amount of creativity and variety on display is nuts.</p>
+                    <li> <i>Pikmin 1 (Wii Version)</i> </li>
+                      <p>Wiimote feels great, practically feels made for the game. Pikmin are cute, game is more laid back and simple than I expected, has a lot of charm in how straight forward and short it is. Executing on a planned strategy definitely the most satisfying part of the game. Pikmin AI is a little rough.</p>
+                    <li> <i>Doom 1 + 2</i> </li>
+                      <p> Surprisingly solid game(s) considering their age. A lot of interesting quirks, but don't ruin the experience. Feel very "crunchy" (animations, sound effects, etc.) and have a lot of charm. Doom 1 is a more consistent game, Doom 2 has higher highs and lower lows (city levels). Props for inspiring every other shooter ever made to make the shotgun the best weapon. </p>
+                    </div>
+
+                </details>
+          
+ 
+          </div>
             
-              <footernonstick id="footernonstick" style="margin-top: 15px;"> 
-              <h1 style="font-size: 20px; font-family: Magic; margin-top: 10px"> | Hosted by Github, formatted with Firefox | © Ari, MMXXV | <u><a href="../credits.html" >Credits</a></u>, <u> <a href="../changelog.html" >Changelog</a></u> |</h1>
-              </footer>
-              </div>
-                      
-              </body>
-                      <style>
-              
-              .lighttext {
-                background-color: #dbc7a6;
-                padding: 5px;
-                border-radius: 5px;
-                margin-bottom: 10px;
-              }
-              
-              body {
-                  background-color:#dbc7a6;
-                  background-image: none;
-              }
-              #container {
-              max-width: 1220px;
-              margin: 0 auto;
-              }
-              </style>
-              
-                </body>
-              </html>
-              
+          </div>
+
+          <div id="indexfooter">
+           <p style=" margin-left: 125px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
+          </div>
+        
+      </main>
+
+    </div>    
+  </body>
+
+<style>
+  .photogrid {
+  grid-auto-flow: row dense;
+  display: grid;
+  row-gap: 10px; 
+  margin-right: 10px;
+  grid-template-columns: 230px;
+  
+  float: left;
+}
+.photogridleft {
+  grid-auto-flow: row dense;
+  display: grid;
+  margin-left: 0px;
+  row-gap: 10px;  
+  grid-template-columns: 230px;
+  
+  float: right;
+}
+.photogrid > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogrid > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+  
+}
+.photogrid > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+.photogridleft > div {
+  background-color: transparent;
+  height: auto;
+  transition-duration: .2s;
+}
+.photogridleft > div:hover {
+  transform: scale(1.25, 1.25);
+  transform-origin: center;
+}
+.photogridleft > div:hover p {
+  transform: scale(0.8, 0.8);
+  transform-origin: center;
+}
+
+#sumwrapper {
+  background-color: #dbc7a6;
+  border-width: 3px;
+  border-color: #dbc7a6;
+  border-style: inset;
+}
+  #maincontent {
+    width: calc(100%);
+    max-width: 750px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    margin-right: 5px;
+  }
+  #sidebar {
+    width: 240px;
+    margin: 0px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    }
+  
+  #scrollbox {
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: #faebcc;
+    background-color: #dbc7a6;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #faebcc;
+    padding: 5px;
+  }
+  #scrollbox p{
+    font-size: 12px;
+    font-family: AG, serif;
+  }
+  #buttonflexwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  #buttondisplay {
+    width: calc((100% / 3) - 5px);
+    margin: 2.5px;
+  }
+  #buttondisplay img{
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+  }
+  #graphicdisplay img{
+    object-fit: cover;
+    width: 240px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #indexfooter {
+    max-width: 750px;
+    background-color: #faebcc;
+    padding: 10px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #dbc7a6;
+    padding: 0px;
+  }
+
+  #indexfooter p{
+    font-size: 12px;
+    font-family: AG, serif;
+    margin-left: 5px;
+  }
+  li{
+    font-family: AGBold;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  summary{
+    font-family: AGBold;
+    font-size: 18px;
+    margin-left: -5px;
+  }
+
+  p {
+  margin-left: 20px;
+  font-family: "AG";
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }         /* Unvisited link  */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  } /* Visited link    */
+  a:hover {
+    color:#2596be;
+    text-decoration: none;
+  }   /* Mouse over link */
+  a:active {
+    color:#008543;
+    text-decoration: none;
+  }  /* Selected link   */
+
+  
+
+
+  body {
+    background-image: url("../assets/webassets/river.png");
+    background-size: cover;
+    background-position: fixed;
+    image-rendering: pixelated;
+  }
+</style>
+
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': false,
+    'disableScrolling': true,
+    'fadeDuration': 200,
+    'imageFadeDuration': 300,
+    'showImageNumberLabel': false,
+  })
+
+</script>
+</html>
