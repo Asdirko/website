@@ -44,11 +44,12 @@ flex-direction: row;
 
 #header { 
   width: 100%;
-  background-color: #FFFFFF;
-  height: 125px;
-  background-image:url('../assets/webassets/header.png');
-  background-size: 100%;
-  background-position: left;
+  background-color: transparent;
+  height: 200px;
+  
+  
+  
+  
   
 }
 
@@ -56,10 +57,13 @@ flex-direction: row;
 
 
 main {
-  background-color:  #dbc7a6;
+  background-color:  #93B1A6;
   padding: 5px;
   border-radius: 0px, 0px, 5px, 5px;
   height: auto;
+  border-color: #183D3D;
+  border-style: solid;
+  border-width: 5px;
 }
 
  footer {
@@ -142,8 +146,8 @@ strong {
 .logo {
   height:100%;
   position: absolute;
-  top: 15px;
-  left: 15%;
+  
+  
 }
           
 
