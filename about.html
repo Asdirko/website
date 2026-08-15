@@ -4,7 +4,7 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home</title>
+      <title>About</title>
       <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
     </head>
@@ -35,35 +35,67 @@
             </div>
           
           <div id="maincontent">
-              <div class="ticker-container">
-                <div class="ticker-wrapper">
-                  <div class="ticker-transition">
-                    
-                    <div class="ticker-item">"As a child, I considered such unknowns sinister. Now, though, I understand they bear no ill will. The universe is, and we are."  </div>
-                    
-                  </div>
-                  </div>
-                </div>
-
-              <div id="buttonflexwrapper"> <!--For three image display, reused from old buttons template-->
-
-                <div id="buttondisplay">
-                  <img src="assets/webassets/funky.png">
-                </div>
-
-                <div id="buttondisplay">
-                  <img src="assets/webassets/cloud.png">
-                </div>
-
-                <div id="buttondisplay">
-                  <img src="assets/webassets/treeskeletons.png">
-                </div>
-
-              </div>
+            <img style="float: right; width: 125px; border-color: #183D3D; border-width: 3px; border-style: inset; margin-left: 10px;" src="assets/webassets/Nausicaa.webp">
+            <p style="font-family: AGBold; margin-top: 0px; margin-bottom: 5px; font-size: 25px;">About the Webmaster</p>
+            <p style="font-family: Ag;">Hi it's me, Ari, amateur programmer and wannabe artist making my way through life the best I can. </p>
+            <p style="font-family: Ag;">Likes: Cassette tapes, Twin Peaks, origami, the smell of the earth after it rains, Boards of Canada, plants, old technology, half awake memories of places you've never been.</p>
+            <p style="font-family: Ag;">Dislikes: Crowds, waiting at bus stops, redbull, social anxiety, strip malls, Windows 11, the current state of the internet, the current state of the world.</p>
+            <p style="font-family: Ag;">For more info on the website, click <a href="websiteinfo.html" style="text-decoration: none"><u>here</u></a>.</p>
             
-            <p style="font-family: AG; margin-top: 5px">Hi! I'm Ari, and this is my webpage where I catalog some of my past projects, thoughts, art etc. It started off as an experiment in HTML development but quickly became a hobby in and of itself. </p>
-            <p style="font-family: AG; margin-top: 5px">As someone with a deep-seated fascination in both older software and creative design, I suppose it was only natural to expect to be making an old-fashioned static website at some point or another. Besides, it's a lot of fun!</p>
           
+              <div style="overflow: hidden; width: 100%;">
+
+  <!-- The slider itself is a flex grid -->
+  <div class="img-ticker">
+
+    <!-- Original set of images. Logo images credits to https://github.com/solodev/infinite-logo-carousel/ -->
+    <!-- Each image is a grid column with width 8rem and horiztonal margin 2rem = 10rem -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+  
+    
+
+    <!-- 2nd copy set of images -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+    
+    
+    <!-- 3rd copy set of images -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+
+  </div>
+</div>
             </div>
             
 
@@ -181,7 +213,7 @@
 
   body {
     
-    background-image: url("../website/assets/photography/whiterapids.JPG");
+    background-image: url("../website/assets/photography/whiterapids.JPG ");
     background-size: cover;
     background-position: fixed;
   }
@@ -222,6 +254,33 @@ font-family: AgBold;
 font-size: 25px;
 font-style: italic;
 }
+
+ @keyframes ticker-kf {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      /* 10rem for each logo x 6 logos total = -60rem */
+      transform: translateX(-84rem);
+    }
+  }
+
+  .img-ticker {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    animation: ticker-kf 20s linear infinite;
+  }
+
+  .tickerlogo {
+    width: 6rem; 
+    flex: none;
+    margin: 0 0.5rem 0 0.5rem;
+    align-self: flex-start;
+    max-width: 100%;
+    height: auto;
+  }
 </style>
 
 </html>

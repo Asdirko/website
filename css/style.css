@@ -16,7 +16,11 @@ font-family: Gameboy;
 src: url('../assets/fonts/gameboy.ttf');
 }
              
-          
+@font-face {
+font-family: TT;
+src: url('../assets/fonts/TT\ Norms\ Pro\ Serif\ Trial\ DemiBold.ttf');
+}
+             
 
 
 
@@ -57,7 +61,7 @@ flex-direction: row;
 
 
 main {
-  background-color:  #93B1A6;
+  background-color:  #none;
   padding: 5px;
   border-radius: 0px, 0px, 5px, 5px;
   height: auto;
