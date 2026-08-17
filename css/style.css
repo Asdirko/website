@@ -4,8 +4,9 @@ font-family: Windows;
 src: url('../assets/fonts/Windows\ Regular.ttf');
 }
 @font-face {
-font-family: AG;
-src: url('../assets/fonts/AppleGaramond.ttf');
+font-family: IBM;
+src: url('../assets/fonts/IBM\ PS-55.ttf');
+
 }
 @font-face {
 font-family: AGBold;
@@ -19,6 +20,7 @@ src: url('../assets/fonts/gameboy.ttf');
 @font-face {
 font-family: TT;
 src: url('../assets/fonts/TT\ Norms\ Pro\ Serif\ Trial\ DemiBold.ttf');
+
 }
              
 
@@ -99,11 +101,10 @@ h1,
 h2,
 h3 {
 color: #000000;
+font-family: IBM;
 }
 
-h1 {
-font-size: 25px;
-}
+
 
 strong {
   color: #000000;
@@ -155,6 +156,26 @@ strong {
 }
           
 
+p {
+  font-family: IBM; 
+}
 
+#logo h1{  /* edit logo here */
+color: white;
+margin-left: 5px; 
+margin-top: 40px; 
+font-size: 55px; 
+font-family: IBM; 
+letter-spacing: 10px; 
 
+text-shadow: 2px 2px 3px #93B1A6, -2px -2px 3px #5C8374; 
+
+}
+
+ a {color: black;}         /* Unvisited link  */
+  a:visited {color: black;} /* Visited link    */
+  a:hover {color:white;}   /* Mouse over link */
+  a:active {color: white;}  /* Selected link   */
+
+  
 
