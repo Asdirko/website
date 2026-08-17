@@ -5,18 +5,18 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Home</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/maintheme.css">
       <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
     </head>
 
   <body> 
     
     <div id="allcontaining"> 
-        <div id="header" style=" margin-top: -10px; backdrop-filter: blur(1px);"  > 
+        <div id="header"> 
           <br>
             <div id="linkbutton">
-              <div id="logo" style="justify-content: center;">
-                <h1 style=""><a href="index.html" style="text-decoration: none;"><i>www.deermaskarchive.org</i></a></h1>
+              <div id="logo"">
+                <h1 style=""><a href="index.html" style="text-decoration: none;"><i>Deer Mask Archive</i></a></h1>
               </div>
             </div>
         </div> 
@@ -45,17 +45,17 @@
                   </div>
                 </div>
 
-              <div id="buttonflexwrapper"> <!--For three image display, reused from old buttons template-->
+              <div id="triflexwrapper"> <!--For three image display, reused from old buttons template-->
 
-                <div id="buttondisplay">
+                <div id="tridisplay">
                   <img src="assets/webassets/funky.png">
                 </div>
 
-                <div id="buttondisplay">
+                <div id="tridisplay">
                   <img src="assets/webassets/cloud.png">
                 </div>
 
-                <div id="buttondisplay">
+                <div id="tridisplay">
                   <img src="assets/webassets/treeskeletons.png">
                 </div>
 
@@ -80,148 +80,13 @@
 
 <style>
 
-  #linkbutton {
-    transition: transform 0.2s;
-  }
-
-  #linkbutton:hover {
-     transform: scale(1.1); 
-  }
-  #maincontent {
-    width: calc(100% - 170px);
-    max-width: 750px;
-    margin: 0px;
-    background-color: transparent;
-    padding: 10px;
-    
-    margin-right: 5px;
-  }
-  #sidebar {
-    width: 170px;
-    margin: 0px;
-    background-image: url(assets/webassets/gas.png);
-    background-size: cover;
-    background-position: top center;
-    padding: 10px;
-    border-width: 3px;
-    border-color: #183D3D;
-    border-style: solid;
-    
-    
-    }
-  
-  #scrollbox {
-    max-height: 200px;
-    overflow-y: scroll;
-    scrollbar-color: #faebcc;
-    background-color: #dbc7a6;
-    border-style: inset;
-    border-width: 2px;
-    border-color: #faebcc;
-    padding: 5px;
-  }
-  #scrollbox p{
-    font-size: 12px;
-    font-family: AG, serif;
-  }
-  #buttonflexwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 10px;
-  }
-  #buttondisplay {
-    width: calc((100% / 3) - 5px);
-    margin: 2.5px;
-  }
-  #buttondisplay img{
-    object-fit: cover;
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    max-height: 170px;
-  }
-  #graphicdisplay img{
-    object-fit: cover;
-    width: 130px;
-    height: auto;
-    margin: 0px;
-    margin-bottom: -10px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  #indexfooter {
-    max-width: 750px;
-    background-image: url(assets/webassets/greenpool\(1\).png);
-    background-size: cover;
-    background-position: right center;
-    padding: -20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #183D3D;
-    
-    margin-top: 25px;
-  }
-
-  #indexfooter p{
-    font-size: 12px;
-    font-family: AGBold;
-    margin-left: 5px;
-    font-style: italic;
-    
-  }
-  
- 
- p {
-  font-family: IBM;
-  size: 30px;
- }
-
   body {
     
-    background-image: url("../website/assets/photography/whiterapids.JPG");
+    background-image: url("../website/assets/photography/skytrees.JPG");
     background-size: cover;
     background-position: fixed;
   }
-  .ticker-container {
-width: 100%;
-overflow: hidden;
-}
-.ticker-wrapper {
-width: 100%;
-padding-left: 100%;
-background-color: transparent;
-}
-@keyframes ticker {
-0% {
-transform: translate3d(0, 0, 0);
-}
-100% {
-transform: translate3d(-100%, 0, 0);
-}
-}
-.ticker-transition {
-display: inline-block;
-white-space: nowrap;
-padding-right: 100%;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-animation-name: ticker;
-animation-duration: 20s;
-}
-.ticker-transition:hover {
-animation-play-state: paused;
-cursor: pointer;
-}
-.ticker-item {
-display: inline-block;
-padding: 0 2rem;
-font-family: AgBold;
-font-size: 25px;
-font-style: italic;
-}
-
-
+ 
 </style>
 
 </html>

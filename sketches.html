@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <link rel="stylesheet" href="css/maintheme.css">
+      <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
+    </head>
+
+  <body> 
+    
+    <div id="allcontaining"> 
+        <div class="book">
+  <div class="pageL">
+    <!-- page content here -->		
+  </div>
+  <div class="seam"></div>
+  <div class="pageR">
+    <!-- page content here -->
+  </div>
+</div>
+      
+     
+          
+    </div>  
+      
+  </body>
+
+<style>
+
+  body {
+    
+    background-image: url("../website/assets/webassets/treeskeletons.png");
+    background-size: cover;
+    background-position: fixed;
+  }
+
+  .book {
+  border: 7px solid black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 4px;
+  width: 500px; /* adjust size */
+  max-width: 100%;
+  aspect-ratio: 3 / 2;
+  display: flex;
+}
+.pageL,	.pageR {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+}
+.pageL {
+  border-left: 1px grey solid;
+}
+.pageR { 
+  border-right: 1px grey solid;
+}
+.seam {
+  width: 7px;
+  background:
+    linear-gradient(to right,
+    white, grey, white);
+}
+ 
+</style>
+
+</html>
+
