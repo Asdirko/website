@@ -54,29 +54,31 @@ src: url('../assets/fonts/gameboy.ttf');
 
 header { 
   width: 100%;
-  background-color: #a0c86e;
+  background-image: url(../assets/webassets/bannerlight.png);
   height: 180px;
   border-width: 3px;
   border-style: none none solid none;
   border-color: #5e7840;
+  margin-top: -10px;
 
 }
 
 #indexfooter { /* This is the most important footer, but keep the other two to prevent some pages from breaking. Can delete it later */
-    max-width: 100%;
+   
     background-color: #a0c86e;
-    padding: -20px;
+    
     border-style: solid none none none;
     border-width: 3px;
     border-color: #5e7840;
+    height: 30px;
     
    
   }
 
   #indexfooter p{
-    font-size: 12px;
+    font-size: 16px;
     font-family: IBM;
-    margin-left: 5px;
+   margin-left: 15px;
     font-style: italic;
     
   }
@@ -132,6 +134,8 @@ line-height: 180px;
 }
 h1 {
  font-family: IBM;
+ margin-top: 5px;
+ margin-bottom: 5px;
 }
 h2,
 h3 {
@@ -142,12 +146,13 @@ font-family: IBM;
 
   a {color: black;}         /* Unvisited link  */
   a:visited {color: black;} /* Visited link    */
-  a:hover {color:white;}   /* Mouse over link */
+  a:hover {color:#5e7840;}   /* Mouse over link */
   a:active {color: white;}  /* Selected link   */
         
 
 p {
   font-family: IBM; 
+  margin-top: 5px ;
 }
 
 
@@ -233,10 +238,6 @@ font-style: italic;
    }
   
 
-header { 
-  background-color: #19232d;
-
-}
 
 #indexfooter { 
     background-color: #19232d;
@@ -258,7 +259,7 @@ color: white;
 }
   a {color: white;}         /* Unvisited link  */
   a:visited {color: white;} /* Visited link    */
-  a:hover {color:blue;}   /* Mouse over link */
+  a:hover {color: #5c8299;}   /* Mouse over link */
   a:active {color: white;}  /* Selected link   */
   
   .ticker-item {
@@ -266,5 +267,6 @@ color: white;
   }
 header {
 border-color:#40677c;
+background-image: url(../assets/webassets/bannerdark.png);
 }
   }     

@@ -11,82 +11,96 @@
 
   <body> 
     
-    <div id="allcontaining"> 
-        <div id="header"> 
-          <br>
-            <div id="linkbutton">
-              <div id="logo"">
-                <h1 style=""><a href="index.html" style="text-decoration: none;"><i>Deer Mask Archive</i></a></h1>
-              </div>
-            </div>
-        </div> 
-      
-      <main style="background-image: url(assets/webassets/greenpool\(1\).png); background-size: cover;">
-        <div id="bodyflexwrapper">
-
-            <div id="sidebar">
-              
-                <div id="linkbutton"> <h1 style="font-family: IBM;  margin: 5px"><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
-               
-                  <div id="linkbutton"> <h1 style="font-family: IBM;  margin: 5px"><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
-                  <div id="linkbutton"> <h1 style="font-family: IBM;  margin: 5px"><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
-                  <div id="linkbutton"> <h1 style="font-family: IBM;  margin: 5px"><a href="about.html" style="text-decoration: none"><i>/info</i></a></h1> </div>
-                
-            </div>
+   <main>
+        
           
-          <div id="maincontent">
-              <div class="ticker-container">
+            <header>
+              <div id="logo">
+                <h1><i>Deer Mask Archive</i></h1>
+                <p style="margin-top: -30px; margin-left: 700px; font-size: 25px;"><i>ver 4.0</i></p>
+              </div>
+            </header>
+      <div class="ticker-container">
                 <div class="ticker-wrapper">
                   <div class="ticker-transition">
-                    
+                    <div class="ticker-item" style="font-family: IBM;">"In a beautiful place out in the country."</div>
                     <div class="ticker-item" style="font-family: IBM;">"As a child, I considered such unknowns sinister. Now, though, I understand they bear no ill will. The universe is, and we are."  </div>
                     
                   </div>
                   </div>
                 </div>
+      <flexcontainer>
 
-              <div id="triflexwrapper"> <!--For three image display, reused from old buttons template-->
+            <sidebar>
+              
+                  <div id="linkbutton"> <h1><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
+                  <div id="linkbutton"> <h1><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="about.html" style="text-decoration: none"><i>/about</i></a></h1> </div>
+                
+            </sidebar>
+          
+          <maincontent>
+            <h1>Welcome</h1>
+             <p>Hi! I'm Ari, a biologist/vaguely creative person. This webpage is my personal library to catalog the ever-growing amorphous mass of my creative endeavours and scattered interests. What started off as a small experiment in HTML development quickly became a hobby in and of itself, and the website has changed quite a bit in the few years since its inception. Enjoy the sights and look around.</p>
+            <p>  Please note that this site is not mobile-friendly, and is best viewed on a 1920 x 1080 display.</p>
+            <div id="triflexwrapper"> 
 
                 <div id="tridisplay">
-                  <img src="assets/webassets/funky.png">
+                  <img src="assets/webassets/funky.png" alt="A sample of E. Coli in a Petri dish">
                 </div>
 
                 <div id="tridisplay">
-                  <img src="assets/webassets/cloud.png">
+                  <img src="assets/webassets/cloud.png" alt="A picture of Cloud, from Final Fantasy VII">
                 </div>
 
                 <div id="tridisplay">
-                  <img src="assets/webassets/treeskeletons.png">
+                  <img src="assets/webassets/treeskeletons.png" alt="A stand of dead trees amidst a lush field of ferns and scrub">
                 </div>
 
               </div>
+            <p></p>
+
+             
             
-            <p>Hi! I'm Ari, and this is my webpage where I catalog some of my past projects, thoughts, art etc. It started off as an experiment in HTML development but quickly became a hobby in and of itself. </p>
-            <p>As someone with a deep-seated fascination in both older software and creative design, I suppose it was only natural to expect to be making an old-fashioned static website at some point or another. Besides, it's a lot of fun!</p>
-          
-            </div>
+          </maincontent>
             
 
-        </div>
-          
-        
-      </main>
-          <div id="indexfooter">
-           <p style=" margin-left: 105px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
+      </flexcontainer>
+      <flexcontainer>
+        <flexboxhalf>
+          <p>some bullshit</p>
+        </flexboxhalf>
+        <flexboxhalf>
+          <p>some more bullshit</p>
+        </flexboxhalf>
+
+      </flexcontainer>
+      
+         <div id="indexfooter">
+           <p> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
           </div> 
-    </div>  
+
+      
+      </main>
+         
+     
       
   </body>
 
 <style>
-
-  body {
+body {
     
-    background-image: url("../website/assets/photography/skytrees.JPG");
+    background-image: url("assets/webassets/DSC_4258.png");
     background-size: cover;
     background-position: fixed;
   }
- 
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-image: url("assets/webassets/neon.png");  
+  }
+}
 </style>
 
 </html>
