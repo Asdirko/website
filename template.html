@@ -4,103 +4,253 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home</title>
+      <title>About</title>
       <link rel="stylesheet" href="css/maintheme.css">
       <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
     </head>
 
   <body> 
     
-   <main>
-        
-          
-            <header>
-              <div id="logo">
-                <h1><i>Deer Mask Archive</i></h1>
-                <p style="margin-top: -30px; margin-left: 700px; font-size: 25px;"><i>ver 4.0</i></p>
-              </div>
-            </header>
-      <div class="ticker-container">
-                <div class="ticker-wrapper">
-                  <div class="ticker-transition">
-                    <div class="ticker-item" style="font-family: IBM;">"In a beautiful place out in the country."</div>
-                    <div class="ticker-item" style="font-family: IBM;">"As a child, I considered such unknowns sinister. Now, though, I understand they bear no ill will. The universe is, and we are."  </div>
-                    
-                  </div>
-                  </div>
-                </div>
-      <flexcontainer>
+    <div id="allcontaining"> 
+       
+      
+      <main style="background-image: url(assets/webassets/coolpooldithered.png); background-size: cover; background-position: center bottom; margin-top: 50px; ">
+        <div id="bodyflexwrapper">
 
-            <sidebar>
+            <div id="sidebar">
               
-                  <div id="linkbutton"> <h1><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
-                  <div id="linkbutton"> <h1><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
-                  <div id="linkbutton"> <h1><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
-                  <div id="linkbutton"> <h1><a href="about.html" style="text-decoration: none"><i>/about</i></a></h1> </div>
-                
-            </sidebar>
+               
+            </div>
           
-          <maincontent>
-            <h1>Welcome</h1>
-             <p>Hi! I'm Ari, a biologist/vaguely creative person. This webpage is my personal library to catalog the ever-growing amorphous mass of my creative endeavours and scattered interests. What started off as a small experiment in HTML development quickly became a hobby in and of itself, and the website has changed quite a bit in the few years since its inception. Enjoy the sights and look around.</p>
-            <p>  Please note that this site is not mobile-friendly, and is best viewed on a 1920 x 1080 display.</p>
-            <div id="triflexwrapper"> 
-
-                <div id="tridisplay">
-                  <img src="assets/webassets/funky.png" alt="A sample of E. Coli in a Petri dish">
-                </div>
-
-                <div id="tridisplay">
-                  <img src="assets/webassets/cloud.png" alt="A picture of Cloud, from Final Fantasy VII">
-                </div>
-
-                <div id="tridisplay">
-                  <img src="assets/webassets/treeskeletons.png" alt="A stand of dead trees amidst a lush field of ferns and scrub">
-                </div>
-
-              </div>
-            <p></p>
-
-             
+          <div id="maincontent">
+            <img style="float: right; width: 125px; border-color: #183D3D; border-width: 3px; border-style: inset; margin-left: 10px;" src="assets/webassets/Nausicaa.webp">
+            <p style=" margin-top: 0px; margin-bottom: 5px; font-size: 25px;">About the Webmaster</p>
+            <p>Hi it's me, Ari, amateur programmer and wannabe artist making my way through life the best I can. </p>
+            <p>Likes: Cassette tapes, Twin Peaks, origami, the smell of the earth after it rains, Boards of Canada, plants, old technology, half awake memories of places you've never been.</p>
+            <p>Dislikes: Crowds, waiting at bus stops, redbull, social anxiety, strip malls, Windows 11, the current state of the internet, the current state of the world.</p>
+            <p>For more info on the website, click <a href="websiteinfo.html" style="text-decoration: none"><u>here</u></a>.</p>
             
-          </maincontent>
+          
+              <div style="overflow: hidden; width: 100%;">
+
+  <!-- The slider itself is a flex grid -->
+  <div class="img-ticker">
+
+    <!-- Original set of images. Logo images credits to https://github.com/solodev/infinite-logo-carousel/ -->
+    <!-- Each image is a grid column with width 8rem and horiztonal margin 2rem = 10rem -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+  
+    
+
+    <!-- 2nd copy set of images -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+    
+    
+    <!-- 3rd copy set of images -->
+    <img class="tickerlogo" src="assets/buttons/css.gif">
+    <img class="tickerlogo" src="assets/buttons/any_browser.gif">
+    <img class="tickerlogo" src="assets/buttons/cavestory.gif">
+    <img class="tickerlogo" src="assets/buttons/firefox3.gif">
+    <img class="tickerlogo" src="assets/buttons/winrar2.gif">
+    <img class="tickerlogo" src="assets/buttons/gameboy.png">
+    <img class="tickerlogo" src="assets/buttons/viewsource.png">
+    <img class="tickerlogo" src="assets/buttons/silksong.png">
+    <img class="tickerlogo" src="assets/buttons/internetarchive.gif">
+    <img class="tickerlogo" src="assets/buttons/mother2.gif">
+    <img class="tickerlogo" src="assets/buttons/neocities-pink.gif">
+    <img class="tickerlogo" src="assets/buttons/learnhtml.gif">
+
+  </div>
+</div>
+            </div>
             
 
-      </flexcontainer>
-      <flexcontainer>
-        <flexboxhalf>
-          <p>some bullshit</p>
-        </flexboxhalf>
-        <flexboxhalf>
-          <p>some more bullshit</p>
-        </flexboxhalf>
-
-      </flexcontainer>
-      
-         <div id="indexfooter">
-           <p> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
-          </div> 
-
-      
+        </div>
+          
+        
       </main>
-         
-     
+          <div id="indexfooter">
+           <p style=" margin-left: 105px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
+          </div> 
+    </div>  
       
   </body>
 
 <style>
-body {
+
+  #linkbutton {
+    transition: transform 0.2s;
+  }
+
+  #linkbutton:hover {
+     transform: scale(1.1); 
+  }
+  #maincontent {
+    width: calc(100% - 220px);
+    max-width: 750px;
+    margin: 0px;
+    background-color: transparent;
+    padding: 10px;
     
-    background-image: url("assets/webassets/DSC_4258.png");
+    margin-right: 5px;
+  }
+  #sidebar {
+    width: 190px;
+    margin: 0px;
+    background-image: url(assets/webassets/kirby.jpg);
+    background-size: cover;
+    background-position: center left;
+    padding: 10px;
+    border-width: 3px;
+    border-color: #183D3D;
+    border-style: solid;
+    
+    
+    }
+  
+  
+  
+  #buttonflexwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  #buttondisplay {
+    width: calc((100% / 3) - 5px);
+    margin: 2.5px;
+  }
+  #buttondisplay img{
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    max-height: 150px;
+  }
+  #graphicdisplay img{
+    object-fit: cover;
+    width: 130px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  #indexfooter {
+    max-width: 750px;
+    background-image: url(assets/webassets/greenpool\(1\).png);
+    background-size: cover;
+    background-position: right center;
+    padding: -20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #183D3D;
+    
+    margin-top: 25px;
+  }
+
+  #indexfooter p{
+    font-size: 12px;
+    font-family: AGBold;
+    margin-left: 5px;
+    font-style: italic;
+    
+  }
+  
+ 
+
+  body {
+    
+    background-image: url("../website/assets/photography/whiterapids.JPG");
     background-size: cover;
     background-position: fixed;
   }
-
-@media (prefers-color-scheme: dark) {
-  body {
-  background-image: url("assets/webassets/neon.png");  
-  }
+  .ticker-container {
+width: 100%;
+overflow: hidden;
 }
+.ticker-wrapper {
+width: 100%;
+padding-left: 100%;
+background-color: transparent;
+}
+@keyframes ticker {
+0% {
+transform: translate3d(0, 0, 0);
+}
+100% {
+transform: translate3d(-100%, 0, 0);
+}
+}
+.ticker-transition {
+display: inline-block;
+white-space: nowrap;
+padding-right: 100%;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-name: ticker;
+animation-duration: 20s;
+}
+.ticker-transition:hover {
+animation-play-state: paused;
+cursor: pointer;
+}
+.ticker-item {
+display: inline-block;
+padding: 0 2rem;
+font-family: AgBold;
+font-size: 25px;
+font-style: italic;
+}
+
+ @keyframes ticker-kf {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      /* 10rem for each logo x 6 logos total = -60rem */
+      transform: translateX(-84rem);
+    }
+  }
+
+  .img-ticker {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    animation: ticker-kf 20s linear infinite;
+  }
+
+  .tickerlogo {
+    width: 6rem; 
+    flex: none;
+    margin: 0 0.5rem 0 0.5rem;
+    align-self: flex-start;
+    max-width: 100%;
+    height: auto;
+  }
 </style>
 
 </html>

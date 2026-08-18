@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
   <html>
     
@@ -36,7 +38,7 @@
                   <div id="linkbutton"> <h1><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
                   <div id="linkbutton"> <h1><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
                   <div id="linkbutton"> <h1><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
-                  <div id="linkbutton"> <h1><a href="about.html" style="text-decoration: none"><i>/about</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="info.html" style="text-decoration: none"><i>/info</i></a></h1> </div>
                 
             </sidebar>
           
@@ -69,7 +71,7 @@
       </flexcontainer>
       <flexcontainer>
         <flexboxhalf>
-          <img src="assets/banners/anime5.gif" style="width: 100%;">
+          <p>some bullshit</p>
         </flexboxhalf>
         <flexboxhalf>
           <p>some more bullshit</p>
@@ -95,10 +97,26 @@ body {
     background-size: cover;
     background-position: fixed;
   }
+ maincontent { /* putting borders here because i want maincontent to be more modular for my other shit*/
+    width: calc(100% - 150px);
+    max-width: 800px;
+    border-width: 3px;
+    border-style: solid none solid none;
+    border-color: #5e7840;
+    background-image: url(assets/webassets/bayerlight.png);
+    background-repeat: repeat;
+    
+    
+  }
 
 @media (prefers-color-scheme: dark) {
   body {
   background-image: url("assets/webassets/indexbgdark.png");  
+  }
+  maincontent {
+    background-color: #19232d;
+    border-color: #40677c;
+    background-image: url(assets/webassets/bayerdark.png);
   }
 }
 </style>
