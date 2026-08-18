@@ -49,6 +49,7 @@ src: url('../assets/fonts/gameboy.ttf');
     border-color: #5e7840;
     border-style: none solid none none;
     max-width: 400px;
+    padding: 5px
    }
   
 
