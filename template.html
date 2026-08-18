@@ -11,74 +11,93 @@
 
   <body> 
     
-    <div id="allcontaining"> 
+   <main>
         
-      <main style="background-image: url(assets/webassets/greenpool\(1\).png); background-size: cover;">
-        <div id="header"> 
-          <br>
-            <div id="linkbutton">
-              <div id="logo" style="justify-content: center;">
-                <h1 style="margin-left: 10px; margin-top: 40px"><a href="index.html" style="text-decoration: none; color: black;"><i>www.deermaskarchive.org</i></a></h1>
+          
+            <header>
+              <div id="logo">
+                <h1><i>Deer Mask Archive</i></h1>
+                <p style="margin-top: -30px; margin-left: 700px; font-size: 25px;"><i>ver 4.0</i></p>
               </div>
-            </div>
-        </div> 
-      
-        <div id="bodyflexwrapper">
+            </header>
+      <div class="ticker-container">
+                <div class="ticker-wrapper">
+                  <div class="ticker-transition">
+                    <div class="ticker-item" style="font-family: IBM;">In a beautiful place out in the country</div>
+                    <div class="ticker-item" style="font-family: IBM;">"As a child, I considered such unknowns sinister. Now, though, I understand they bear no ill will. The universe is, and we are."  </div>
+                    
+                  </div>
+                  </div>
+                </div>
+      <flexcontainer>
 
-            <div id="sidebar">
+            <sidebar>
               
-                <div id="linkbutton"> <h1 style=" margin: 5px"><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
-              
-                  <div id="linkbutton"> <h1 style="margin: 5px"><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
-                  <div id="linkbutton"> <h1 style="margin: 5px"><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
-                  <div id="linkbutton"> <h1 style="margin: 5px"><a href="about.html" style="text-decoration: none"><i>/about</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="photography.html" style="text-decoration: none"><i>/photos</i></a></h1></div>
+                  <div id="linkbutton"> <h1><a href="misc.html" style="text-decoration: none"><i>/stuff</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="links.html" style="text-decoration: none"><i>/links</i></a></h1> </div>
+                  <div id="linkbutton"> <h1><a href="about.html" style="text-decoration: none"><i>/about</i></a></h1> </div>
                 
-            </div>
+            </sidebar>
           
-          <div id="maincontent">
+          <maincontent>
+            <div id="triflexwrapper"> <!--For three image display, reused from old buttons template-->
+
+                <div id="tridisplay">
+                  <img src="assets/webassets/funky.png" alt="A sample of E. Coli in a Petri dish">
+                </div>
+
+                <div id="tridisplay">
+                  <img src="assets/webassets/cloud.png" alt="A picture of Cloud, from Final Fantasy VII">
+                </div>
+
+                <div id="tridisplay">
+                  <img src="assets/webassets/treeskeletons.png" alt="A stand of dead trees amidst a lush field of ferns and scrub">
+                </div>
+
+              </div>
             
 
              
             
-            </div>
+          </maincontent>
             
 
-        </div>
-          
-        
-      </main>
-      <main style="background-image: url(assets/webassets/greenpool\(1\).png); background-size: cover; margin-top: 50px;" >
-        <div id="bodyflexwrapper">
+      </flexcontainer>
+      <flexcontainer>
+        <flexboxhalf>
+          <p>some bullshit</p>
+        </flexboxhalf>
+        <flexboxhalf>
+          <p>some more bullshit</p>
+        </flexboxhalf>
 
-            
-          
-          <div id="maincontent">
-            
-
-             
-            
-            </div>
-            
-
-        </div>
-          
-        
-      </main>
-          <div id="indexfooter">
+      </flexcontainer>
+      
+         <div id="indexfooter">
            <p style=" margin-left: 105px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1></p>
           </div> 
-    </div>  
+
+      
+      </main>
+         
+     
       
   </body>
 
 <style>
 body {
     
-    background-image: url("../website/assets/photography/whiterapids.JPG ");
+    background-image: url("assets/webassets/DSC_4258.png");
     background-size: cover;
     background-position: fixed;
   }
 
+@media (prefers-color-scheme: dark) {
+  body {
+  background-image: url("assets/webassets/neon.png");  
+  }
+}
 </style>
 
 </html>

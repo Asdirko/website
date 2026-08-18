@@ -16,92 +16,61 @@ font-family: Gameboy;
 src: url('../assets/fonts/gameboy.ttf');
 }
              
-       
-
- #maincontent {
-    width: calc(100% - 190px);
-    max-width: 750px;
+ 
+ maincontent {
+    width: calc(100% - 150px);
+    max-width: 800px;
     margin: 0px;
-    background-color: transparent;
-    padding: 10px;
-    
-    margin-right: 5px;
-  }
-  #sidebar {
-    width: 150px;
-    margin: 0px;
-    background-image: url(../assets/webassets/gas.png); /* This should be moved to individual pages style sheet */
-    background-size: cover;
-    background-position: center top;
+    background-color: #a0c86e;
     padding: 10px;
     border-width: 3px;
-    border-color: #183D3D;
-    border-style: solid;
+    border-style: solid none solid none;
+    border-color: #5e7840;
+    
+    
+  }
+
+  sidebar {
+    width: 150px;
+    margin: 0px;
+    background-color: #a0c86e;
+    padding: 10px;
+    border-width: 3px;
+    border-color: #5e7840;
+    border-style: solid solid solid none;
     
     
     }
   
+   flexboxhalf {
+    width: calc(100% / 2 );    
+    background-color: #a0c86e;
+    border-width: 3px;
+    border-color: #5e7840;
+    border-style: none solid none none;
+    max-width: 400px;
+   }
   
-  
 
-body {
-background-attachment: fixed; /* prevents bg scrolling */
-}   
-
-
-
-#allcontaining {
-max-width: 900px;
-margin: auto;
-margin-top: -20px;
-
-background-color: white;
-  
-}
-
-#bodyflexwrapper {
-display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-}
-
-
-
-#header { 
+header { 
   width: 100%;
-  background-color: transparent;
+  background-color: #a0c86e;
   height: 180px;
-  
-  
-  
-  
-  
-}
+  border-width: 3px;
+  border-style: none none solid none;
+  border-color: #5e7840;
 
-
-
-
-main {
-  background-color:  none;
-  padding: 5px;
-  border-radius: 0px, 0px, 5px, 5px;
-  height: auto;
-  border-color: #183D3D;
-  border-style: solid;
-  border-width: 5px;
 }
 
 #indexfooter { /* This is the most important footer, but keep the other two to prevent some pages from breaking. Can delete it later */
     max-width: 100%;
-    background-image: url(../assets/webassets/greenpool\(1\).png);
-    background-size: cover;
-    background-position: right center;
+    background-color: #a0c86e;
     padding: -20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #183D3D;
+    border-style: solid none none none;
+    border-width: 3px;
+    border-color: #5e7840;
     
-    margin-top: 25px;
+   
   }
 
   #indexfooter p{
@@ -111,32 +80,56 @@ main {
     font-style: italic;
     
   }
+.ticker-wrapper {
+width: 100%;
+padding-left: 100%;
+background-color: #a0c86e;
+}
+body {
+background-attachment: fixed; /* prevents bg scrolling */
+}   
 
- footer {
-  display: flex;
-  background-color: #dbc7a6;
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border-radius: 5px 5px 5px 5px;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  bottom: 0; 
+flexcontainer {
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
 }
 
-footernonstick {
-  display: flex;
-  background-color: #dbc7a6;
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border-radius: 5px 5px 5px 5px;
-  justify-content: center;
-  align-items: center;
+
+
+
+
+
+
+main {
+  background-color:  transparent;
+  height: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
+
+
+
+ .logo {
+  height:100%;
+ 
+}
+  #logo h1{  /* edit logo here */
+
+margin: auto;
+font-size: 70px; 
+font-family: IBM; 
+letter-spacing: 10px; 
+text-align: center;
+vertical-align: middle;
+line-height: 180px;   
+
+
+/*text-shadow: 2px 2px 3px white, -2px -2px 3px white; */
+
+
+}
 h1 {
  font-family: IBM;
 }
@@ -151,47 +144,22 @@ font-family: IBM;
   a:visited {color: black;} /* Visited link    */
   a:hover {color:white;}   /* Mouse over link */
   a:active {color: white;}  /* Selected link   */
-
-
-            
-          
-
-.logo {
-  height:100%;
-  
- margin: auto;
-  
-}
-          
+        
 
 p {
   font-family: IBM; 
 }
 
-#logo h1{  /* edit logo here */
-color: white;
-margin: auto;
-font-size: 55px; 
-font-family: IBM; 
-letter-spacing: 10px; 
 
 
-text-shadow: 2px 2px 3px #93B1A6, -2px -2px 3px #5C8374; 
-
-
-}
-
- a {color: black;}         /* Unvisited link  */
-  a:visited {color: black;} /* Visited link    */
-  a:hover {color:white;}   /* Mouse over link */
-  a:active {color: white;}  /* Selected link   */
-
-  
   /* These increase size of link text on hover */
   #linkbutton {  
     transition: transform 0.2s;
   }
-
+  #linkbutton h1{
+    margin: 5px;
+    margin-left: 15px;
+  }
   #linkbutton:hover {
      transform: scale(1.1); 
   }
@@ -217,12 +185,9 @@ text-shadow: 2px 2px 3px #93B1A6, -2px -2px 3px #5C8374;
    .ticker-container {
 width: 100%;
 overflow: hidden;
+
 }
-.ticker-wrapper {
-width: 100%;
-padding-left: 100%;
-background-color: transparent;
-}
+
 @keyframes ticker {
 0% {
 transform: translate3d(0, 0, 0);
@@ -238,12 +203,12 @@ padding-right: 100%;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 animation-name: ticker;
-animation-duration: 20s;
+animation-duration: 30s;
 }
-.ticker-transition:hover {
+/*.ticker-transition:hover {
 animation-play-state: paused;
 cursor: pointer;
-}
+} want this to not pause the ticker but still a really valuable feature elsewhere*/
 .ticker-item {
 display: inline-block;
 padding: 0 2rem;
@@ -251,3 +216,55 @@ font-family: AgBold;
 font-size: 25px;
 font-style: italic;
 }
+
+ @media (prefers-color-scheme: dark) {
+    maincontent {
+    background-color: #19232d;
+    border-color: #40677c;
+  }
+  sidebar {
+    background-color: #19232d;
+    border-color: #40677c;
+     }
+  
+   flexboxhalf {
+    background-color: #19232d;
+    border-color: #40677c;
+   }
+  
+
+header { 
+  background-color: #19232d;
+
+}
+
+#indexfooter { 
+    background-color: #19232d;
+    border-color: #40677c;
+    
+  }
+
+.ticker-wrapper {
+
+background-color: #19232d;
+}
+
+p {
+color: white;
+}
+
+h1{
+color: white;
+}
+  a {color: white;}         /* Unvisited link  */
+  a:visited {color: white;} /* Visited link    */
+  a:hover {color:blue;}   /* Mouse over link */
+  a:active {color: white;}  /* Selected link   */
+  
+  .ticker-item {
+  color: white;
+  }
+header {
+border-color:#40677c;
+}
+  }     
