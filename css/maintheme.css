@@ -50,6 +50,16 @@ src: url('../assets/fonts/gameboy.ttf');
     padding: 5px
    }
   
+   flexboxquarter {
+    width: calc(100% / 4 );    
+    background-color: #a0c86e;
+    border-width: 3px;
+    border-color: #5e7840;
+    border-style: none solid none none;
+    max-width: 200px;
+    padding: 5px
+   }
+  
 
 header { 
   width: 100%;
@@ -96,7 +106,22 @@ flex-wrap: nowrap;
 flex-direction: row;
 }
 
+flexbox8 {
+    width: calc(100% / 8 );    
+    background-color: transparent;
+    max-width: 100px;
+    
+   
+   
+   }
 
+flexbox8 img{
+    width: 100%;   
+    background-color: transparent;
+    
+    max-width: calc(100%/7.3);
+   
+   }
 
 
 
@@ -238,9 +263,11 @@ font-style: italic;
   
   .pixol p{
     padding: 10px;
+    
   }
   .pixol h1{
-    padding: 10px;
+    padding: 0px;
+    font-style: italic;
   }
  /* all this below is for the image ticker NOT the text ticker */
    @keyframes ticker-kf {
@@ -290,6 +317,10 @@ font-style: italic;
     border-color: #40677c;
    }
   
+   flexboxquarter {
+    background-color: #19232d;
+    border-color: #40677c;
+   }
 
 
 #indexfooter { 
