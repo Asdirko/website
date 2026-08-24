@@ -36,7 +36,8 @@ src: url('../assets/fonts/gameboy.ttf');
     border-width: 3px;
     border-color: #5e7840;
     border-style: solid solid solid none;
-    
+    background-image: url(assets/webassets/bayerlight.png);
+    background-repeat: repeat;
     
     }
   
@@ -284,7 +285,20 @@ font-style: italic;
     border-image-width: 14px;
 }
 
+  .broider h1{
+    font-size: 40px;
+    font-style: italic ;
+    margin: auto;
+  }
 
+  .broider p{
+  margin-top: 2px; 
+  margin-bottom: 2px;
+  }
+
+  .broider a{
+    font-style: italic;
+  }
  /* all this below is for the image ticker NOT the text ticker */
    @keyframes ticker-kf {
     0% {
@@ -342,6 +356,9 @@ font-style: italic;
   sidebar {
     background-color: #19232d;
     border-color: #40677c;
+    background-image: url(assets/webassets/bayerdark.png);
+    background-repeat: repeat;
+  
      }
   
    flexboxhalf {
