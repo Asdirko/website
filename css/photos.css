@@ -7,7 +7,7 @@ src: url('../assets/fonts/IBM\ PS-55.ttf');
 h1 {
     font-family: IBM;
     font-size: 50px;
-    letter-spacing: 15px;
+    letter-spacing: 13px;
     text-align: center;
     font-style: italic;
 }
@@ -35,7 +35,7 @@ display: grid;
 row-gap: 10px; 
 margin-right: 10px;
 grid-template-columns: 300px;
-width: 300px;
+width: 320px;
 float: left;
 text-align: center;
 
@@ -46,8 +46,9 @@ display: grid;
 margin-left: 0px;
 row-gap: 10px;  
 grid-template-columns: 300px;
-width: 300px;
+width: 320px;
 float: left;
+text-align: center;
 }
 
 .photogrid > div {
@@ -75,7 +76,7 @@ float: left;
   transform-origin: center;
 }
 .photogridleft > div:hover p {
-  transform: scale(0.8, 0.8);
+  transform: scale(1.10, 1.10);
   transform-origin: center;
 }
 
@@ -84,13 +85,13 @@ float: left;
 
 body {
 
-background-image: url("../assets/webassets/dotcrosslight.png");
+background-image: url("../assets/webassets/bayerlight.png");
 background-repeat: repeat;
-background-color: #a0c86e;
+background-color: #6b793c;
 
 }
 #container {
-max-width: 920px;
+max-width: 980px;
 margin: 0 auto;
 
 }
@@ -103,14 +104,57 @@ img {
 
 }
 
+buttonbox {
+display: flex;
+justify-content: center;
+
+}
+.broider {
+    border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAB3ElEQVR4Xu3UQWoDMRBE0fj+h04QCUZqiuqRqWyk/1ce1D1GD+PXV9/3+5Pu9f70223zSxVDdRvQ7n2X7OFfu19w2/xSxVDdBrR73yV1WF+oZuaYn1JYAPmsD6ANkMjOq2W7IGJ+amB1IPW8xvwUoOEfBKANkMjOA9oAiez8J6D1/PS6+wO6GaDhAA23DVrrXnB71kdh2QXyPgrLLpD3UVh2gbzPeLADD85Pr7v/cg5oH6DhAA0HaDhAwwEaDtBw26C17gW3Z30Ull0g76Ow7AJ5H4VlF8j7jAc78OD89Lr7L+eA9gEaDtBwgIYDNByg4QANtw1a615we9ZHYdkF8j4Kyy6Q91FYdoG8z3iwAw/OT6+7/3IOaB+g4QANB2g4QMMBGg7QcNugte4Ft2d9FJZdIO+jsOwCeR+FZRfI+4wHO/Dg/PS6+y/ngPYBGg7QcICGAzQcoOEADbcNWutecHvWR2HZBfI+CssukPdRWHaBvM94sAMPzk+vu/9yDmgfoOEADffvoDX7nyI6ev6T/9Aa81OAhn8QgDZAIjtfD0f1hWpmjvkphQWQz/oA2gCJ7Lxatgsi5qc6rFEFq9V33Da/VDFUtwHt3nfJHv61+wW3zS9VDNVtQLv3XfoB8N5wNNFT+d8AAAAQZGVCRzIwRDAyMTM1NzE4MTM2MkKo/huyAAAAAElFTkSuQmCC") 28 /  28px / 0 round;
+    border-width:  28px;
+    border-style:  solid;
+    border-image-width: 14px;
+    background-color: #5e7840;
+    padding: -2px;
+    min-width: 50px;
+    margin-right: 20px;
+    max-height: 10px;
+    align-items: ;
+}
+
+
+
+ #linkbutton {  
+    transition: transform 0.2s;
+  }
+  #linkbutton h1{
+    margin: 5px;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  #linkbutton:hover {
+     transform: scale(1.2); 
+  }
+
+   a {color: black;}         /* Unvisited link  */
+  a:visited {color: black;} /* Visited link    */
+  a:hover {color: #d1cc8d;}   /* Mouse over link */
+  a:active {color: white;}  /* Selected link   */
+        
+
 @media (prefers-color-scheme: dark) {
 body{
-background-image: url("../assets/webassets/dotcrossdark.png");
+background-image: url("../assets/webassets/bayerdark.png");
 background-repeat: repeat;
-background-color: #40677c;
+background-color: #1c221d;
 
 }
 
+ a {color: white;}         /* Unvisited link  */
+  a:visited {color: white;} /* Visited link    */
+  a:hover {color: #889faf;}   /* Mouse over link */
+  a:active {color: white;}  /* Selected link   */
+    
 
 p {
 color: white;

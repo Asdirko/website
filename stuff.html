@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+  <html>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Stuff</title>
+      <link rel="stylesheet" href="css/maintheme.css">
+      <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
+    </head>
+
+  <body> 
+    
+   <main>
+         
+          
+        <flexcontainer>
+          <maincontent>
+            <div class="broider">
+              <h1 style="letter-spacing: 15px;">Stuff</h1>
+              <hr class="solid">
+              <p>A grab bag of things that can't go anywhere else</p>
+              <p><a href="index.html"><i>- - > return home? < - - </i></a></p>
+              
+            </div>
+          </maincontent>
+        </flexcontainer>
+        
+        <flexcontainer style="margin-top: 20px;">
+          <maincontent>
+            <div class="broider">
+              <h1>Assorted Webpages</h1>
+              <hr class="solid">
+              
+                <flexcontainer style="justify-content: center; margin-top: 25px;">
+                  <flexbox6>
+                    <a href="login.html"><img src="assets/webassets/loginicon.png"></a>
+                    <p>LOGIN</p>
+                  </flexbox6>
+                 
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                   <flexbox6>
+                    <img src="assets/webassets/crtleft.png">
+                  </flexbox6>
+
+                </flexcontainer>
+
+                <hr class="solid" style="margin-top: 25px;">
+          
+          </div>
+          </maincontent>
+          </flexcontainer>
+
+      
+
+       
+
+        
+      
+         
+      
+      </main>
+         
+     
+      
+  </body>
+
+<style>
+ 
+	
+ 
+  .broider{
+    text-align: center;}
+body {
+    
+    background-image: url("assets/webassets/linklight.png");
+    background-size: cover;
+    background-position: fixed;
+  }
+ maincontent { /* putting borders here because i want maincontent to be more modular for my other shit*/
+    
+    background-image: url(assets/webassets/bayerlight.png); 
+    background-repeat:repeat ;
+    background-color:  rgba(160, 200, 110, 0.8);
+  }
+
+  hr.solid {
+  border-top: 2px dotted #000;
+  border-bottom: none;
+}
+
+flexbox6 {
+    width: 100px;    
+    background-color: transparent;
+    max-width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: transform 0.2s;
+   
+   
+   }
+flexbox6:hover{
+  transform: scale(1.2);
+  letter-spacing: 10px;
+  
+  
+  
+}
+flexbox6 img{
+    width: 100%;   
+    background-color: transparent;
+    
+    max-width: 100px;
+   
+   }
+
+flexbox6 p{
+ font-size: 20px;
+ 
+  }
+  
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-image: url("assets/webassets/linkdark.png");  
+  }
+  maincontent {
+    
+    background-image: url(assets/webassets/bayerdark.png);
+    background-color: rgba(25, 35, 45, 0.8);
+  }
+
+  hr.solid {
+  border-top: 2px dotted #fff;
+  border-bottom: none;
+  
+  }
+}
+</style>
+
+</html>
+

@@ -1,73 +1,187 @@
 <!DOCTYPE html>
-  <html>
-    
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home</title>
-      <link rel="stylesheet" href="css/maintheme.css">
-      <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
-    </head>
+<html lang="en">
+  <head>
+    <title>sketchbook</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="some drawings">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <style>
+ 	* { box-sizing: border-box; }
+	body { 
+  background: url('assets/webassets/linklight.png'); 
+  background-repeat: none;
+  background-size: cover;
+  color: black;}
+	section {
+		border: 0.8vw solid black;
+		background-color: white;
+		border-radius: 2vw;
+		width: 65vw;
+		height: 40vw;
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 0.2vw;
+	}
+	section#start { 
+		display: flex;
+		z-index: 1;
+	}
+	section:target {
+		display: flex;
+		z-index: 2;
+	}
+	.pageL,	.pageR {
+		height: 100%;
+		width:50%;
+		display: inline-block;
+		position: relative;
+		border-radius: 1.5vw;
+		font-size: 32px;
+	}
+	.pageL { border-left: 0.1vw grey solid; }
+	.pageR { border-right: 0.1vw grey solid; }
+	a.pageL:hover::after, a.pageL:focus::after {
+		content: '←';
+		color: black;
+		position: absolute;
+		bottom: 1vw;
+		left: 1.2vw;
+	}
+	a.pageR:hover::after, a.pageR:focus::after {
+		content: '→';
+		color: black;
+		position: absolute;
+		bottom: 1vw;
+		right: 1.2vw;
+	}
+	.mid { width: 1%; background: linear-gradient(to right, white, grey, white); }
+	img, h1, p { max-width: 90%; max-height: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+		image-rendering: auto;
+		filter: none;
+	}
+	h1 { text-align: center; top: 40%; }
+	section a:hover, section a:focus { background-color: transparent; }
+	.home {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 3
+	}
+	.home a { color: teal; background-color: white; }
+	.home a:hover, .home a:focus { color: white; background-color: teal; }
+	
+	@media screen and (max-width: 1000px){
+		section {
+			width: 97.5vw;
+			height: 67.5vw;
+		}
+	}
+	
+	@media screen and (max-width: 600px){
+		main { 
+			display: flex;
+			width: 100%;
+			height: 100vh;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+		section {
+			width: 200vw;
+			height: fit-content;
+			align-content: center;
+			display:flex;
+			border: none;
+			border-radius: 0;
+			outline:none;
+			border-top: 3px outset lightgrey;
+			border-bottom: 3px outset lightgrey;
+		}
+		.mid { display: none; }
+		section { 	
+			position: static;
+			transform: translate(0,0);
+			margin: auto;
+		}
+		.pageL,	.pageR {
+			width: 100vw;
+			height: 60vh;
+			min-height: 98vw;
+			padding: 40px 0;
+			display: inline-block;
+			border-left: none;
+			border-right: none;
+		}
+		img { max-width: 100%; padding: 2vw; }
+		h1 { top: 50%; }
+		h1::after {
+			content: '-->';
+			display: block;
+			margin: 40px;
+			font-size: 40px;
+		}
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		body { background: url(assets/webassets/palettedark.jpg); }
+	}
+  </style>
+</head>
+<body>
 
-  <body> 
-    
-    <div id="allcontaining"> 
-        <div class="book">
-  <div class="pageL">
-    <!-- page content here -->		
-  </div>
-  <div class="seam"></div>
-  <div class="pageR">
-    <!-- page content here -->
-  </div>
-</div>
-      
-     
-          
-    </div>  
-      
-  </body>
+<nav class="home"><a href="index.html">return home</a></nav>
 
-<style>
+<main>
 
-  body {
-    
-    background-image: url("../website/assets/webassets/treeskeletons.png");
-    background-size: cover;
-    background-position: fixed;
-  }
+<section id="start">
+	<div class="pageL">
+		<img src="assets/art/doubler.png" alt="">
+	</div>
+	<div class="mid"></div>
+	<a class="pageR" href="#01">
+		<img src="assets/art/arzach.JPG" alt="">
+	</a>
+</section>
 
-  .book {
-  border: 7px solid black;
-  background-color: white;
-  border-radius: 15px;
-  padding: 0 4px;
-  width: 500px; /* adjust size */
-  max-width: 100%;
-  aspect-ratio: 3 / 2;
-  display: flex;
-}
-.pageL,	.pageR {
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-  position: relative;
-  border-radius: 10px;
-}
-.pageL {
-  border-left: 1px grey solid;
-}
-.pageR { 
-  border-right: 1px grey solid;
-}
-.seam {
-  width: 7px;
-  background:
-    linear-gradient(to right,
-    white, grey, white);
-}
- 
-</style>
+<section id="01">
+	<a class="pageL" href="#start">
+		<img src="assets/art/burningman.png" alt="">
+	</a>
+	<div class="mid"></div>
+	<a class="pageR" href="#02">
+		<img src="assets/art/crestsketch.jpg" alt="">
+	</a>
+</section>
 
+<section id="02">
+	<a class="pageL" href="#01">
+		<img src="assets/art/glass.jpg" alt="">
+	</a>
+	<div class="mid"></div>
+	<a class="pageR" href="#03">
+		<img src="assets/art/telephone.png" alt="">
+	</a>
+</section>
+
+<section id="03">
+	<a class="pageL" href="#02">
+		<img src="assets/art/fishdreams.png" alt="">
+	</a>
+	<div class="mid"></div>
+	<div class="pageR">
+		<img src="assets/art/waterscene.JPG" alt="">
+	</div>
+</section>
+
+</main>
+
+</body>
 </html>
 
