@@ -4,204 +4,140 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home</title>
-      <link rel="stylesheet" href="css/style.css">
+      <title>Credits</title>
+      <link rel="stylesheet" href="css/maintheme.css">
       <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
     </head>
 
   <body> 
     
-    <div id="allcontaining"> 
-        <div id="header" style=" margin-top: -10px; backdrop-filter: blur(1px);"  > 
-          <br>
-            <div id="linkbutton">
-              <div id="logo" style="justify-content: center;">
-                <h1 style="margin-left: 10px; margin-top: 40px; font-size: 55px; font-family: TT; letter-spacing: 1px; text-shadow: 2px 2px 3px #93B1A6, -2px -2px 3px #5C8374; "><a href="index.html" style="text-decoration: none; color: black;"><i>www.deermaskarchive.org</i></a></h1>
-              </div>
+   <main style="max-width: 600px;">
+         
+          
+        <flexcontainer>
+          <maincontent>
+            <div class="broider">
+              <h1>Credits:</h1>
+              
+              <p>A mostly comprehensive list of the tools and assets I used to build this website. If you want to find other resources for building a website, check out the <a href="">website resources</a> or the <a href="links.html">links</a> section.</p>
+             <br>
+              <p><a href="index.html"><i>* return home *</i></a></p>
+              
+              <hr class="solid">
+              <h1>Fonts:</h1>
+             
+              <p>the default site font is from the japanese IBM PS/55 personal computer, which you can find <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_ps-55_re#-">here</a></p>
+              <p>other fonts used: <i>Windows</i> and <i>Gameboy</i></p>
+              <hr class="solid">
+              <h1>Code:</h1>
+              <p>lightbox code in the galleries courtesy of <a href="https://lokeshdhakar.com/projects/lightbox2/">Lokesh Dakar </a></p>
+              <p> General html reference from <a href="https://www.w3schools.com/"> <u> W3schools</u> </a> </p>
+              <p>assorted code snippets courtesy of <a href="https://ribo.zone">ribo.zone</a></p>
+
+              <hr class="solid">
+              <h1>Graphics:</h1>
+              <p>dithered background created with <a href="https://app.dithermark.com/">Dithermark</a> and  edited with <a href="https://krita.org/en/">Krita</a></p>
+              <p>background textbox patterns from <a href="https://ribo.zone">ribo.zone</a> and edited with <a href="https://www.aseprite.org/">Aseprite</a> </p>
+              <p>header image by Byron Harmon on the <a href="https://archive.org/details/PC009359">Internet Archive</a></p>
+              <p>border images from <a href="https://maxbittker.github.io/broider/">Broider</a></p>
+              
+              <hr class="solid">
+              <p>all other code/photography is my own unless otherwise stated</p> <p> ©2024 - 2026 Ari</p>
             </div>
-        </div> 
-      
-      <main style="background-image: url(assets/webassets/greenpool\(1\).png); background-size: cover;">
-        <div id="bodyflexwrapper">
+          </maincontent>
+        </flexcontainer>
+        
+        
 
            
-          
-          <div id="maincontent">
-            <h1 style="font-family: AG; margin-top: 0px">Credits</h1>
-              <p>Fonts Used: Apple Garamond, Gameboy, Windows, IBM-PS 55 </p>
-              
-              <p> <a href="https://www.dithermark.com/"> <u> Dithermark</u> </a> used for some background effects </p>
-              <p> General html reference from <a href="https://www.w3schools.com/"> <u> W3schools</u> </a> </p>
-              <p> Lightbox code in galleries courtesy of <a href="https://lokeshdhakar.com/projects/lightbox2/"> <u>Lokesh Dakar</u> </a> </p>
-              <p> Code snippets from <a href="https://ribo.zone"> <u>ribo.zone</u> </a> </p>
 
-             
-            
-            </div>
-            
+      
 
-        </div>
-          
+       
+
         
+      
+         
+      
       </main>
-          <div id="indexfooter">
-           <p style=" margin-left: 105px;"> | Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2024 - 2026 Ari | <u><a href="credits.html" >Credits</a></u>, <u> <a href="changelog.html" >Changelog</a></u> |</h1>
-          </div> 
-    </div>  
+         
+     
       
   </body>
 
 <style>
-
-  #linkbutton {
-    transition: transform 0.2s;
-  }
-
-  #linkbutton:hover {
-     transform: scale(1.1); 
-  }
-  #maincontent {
-    width: calc(100% - 190px);
-    max-width: 750px;
-    margin: 0px;
-    background-color: transparent;
-    padding: 10px;
+ 
+	
+ 
+  .broider{
+    text-align: center;}
+body {
     
-    margin-right: 5px;
-  }
-
-  #maincontent p {
-    font-family: IBM;
-    margin-top: 1px;
-    margin-bottom: 1px;
-  }
-  #sidebar {
-    width: 150px;
-    margin: 0px;
-    background-image: url(assets/webassets/gas.png);
-    background-size: cover;
-    background-position: center top;
-    padding: 10px;
-    border-width: 3px;
-    border-color: #183D3D;
-    border-style: solid;
-    
-    
-    }
-  
-  #scrollbox {
-    max-height: 200px;
-    overflow-y: scroll;
-    scrollbar-color: #faebcc;
-    background-color: #dbc7a6;
-    border-style: inset;
-    border-width: 2px;
-    border-color: #faebcc;
-    padding: 5px;
-  }
-  #scrollbox p{
-    font-size: 12px;
-    font-family: AG, serif;
-  }
-  #buttonflexwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 10px;
-  }
-  #buttondisplay {
-    width: calc((100% / 3) - 5px);
-    margin: 2.5px;
-  }
-  #buttondisplay img{
-    object-fit: cover;
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    max-height: 150px;
-  }
-  #graphicdisplay img{
-    object-fit: cover;
-    width: 130px;
-    height: auto;
-    margin: 0px;
-    margin-bottom: -10px;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  #indexfooter {
-    max-width: 750px;
-    background-image: url(assets/webassets/greenpool\(1\).png);
-    background-size: cover;
-    background-position: right center;
-    padding: -20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #183D3D;
-    
-    margin-top: 25px;
-  }
-
-  #indexfooter p{
-    font-size: 12px;
-    font-family: AGBold;
-    margin-left: 5px;
-    font-style: italic;
-    
-  }
-  
-  a {color: black;}         /* Unvisited link  */
-  a:visited {color: black;} /* Visited link    */
-  a:hover {color:white;}   /* Mouse over link */
-  a:active {color:#008543;}  /* Selected link   */
-
-  
-
-
-  body {
-    
-    background-image: url("../website/assets/photography/whiterapids.JPG ");
+    background-image: url("assets/webassets/creditslight.png");
     background-size: cover;
     background-position: fixed;
   }
-  .ticker-container {
-width: 100%;
-overflow: hidden;
+ maincontent { /* putting borders here because i want maincontent to be more modular for my other shit*/
+    
+    background-image: url(assets/webassets/bayerlight.png); 
+    background-repeat:repeat ;
+    background-color:  rgba(160, 200, 110, 0.8);
+  }
+
+  hr.solid {
+  border-top: 2px dotted #000;
+  border-bottom: none;
 }
-.ticker-wrapper {
-width: 100%;
-padding-left: 100%;
-background-color: transparent;
+
+flexbox6 {
+    width: 100px;    
+    background-color: transparent;
+    max-width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: transform 0.2s;
+   
+   
+   }
+flexbox6:hover{
+  transform: scale(1.2);
+  
+  
+  
+  
 }
-@keyframes ticker {
-0% {
-transform: translate3d(0, 0, 0);
-}
-100% {
-transform: translate3d(-100%, 0, 0);
-}
-}
-.ticker-transition {
-display: inline-block;
-white-space: nowrap;
-padding-right: 100%;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
-animation-name: ticker;
-animation-duration: 20s;
-}
-.ticker-transition:hover {
-animation-play-state: paused;
-cursor: pointer;
-}
-.ticker-item {
-display: inline-block;
-padding: 0 2rem;
-font-family: AgBold;
-font-size: 25px;
-font-style: italic;
+flexbox6 img{
+    width: 100%;   
+    background-color: transparent;
+    
+    max-width: 100px;
+   
+   }
+
+flexbox6 p{
+ font-size: 20px;
+ 
+  }
+  
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-image: url("assets/webassets/creditsdark.png");  
+  }
+  maincontent {
+    
+    background-image: url(assets/webassets/bayerdark.png);
+    background-color: rgba(25, 35, 45, 0.8);
+  }
+
+  hr.solid {
+  border-top: 2px dotted #fff;
+  border-bottom: none;
+  
+  }
 }
 </style>
+
 
 </html>
 

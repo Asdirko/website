@@ -77,10 +77,9 @@ header {
    
     background-color: #a0c86e;
     
-    border-style: solid none none none;
-    border-width: 3px;
-    border-color: #5e7840;
-    height: 30px;
+    min-height: 50px;
+    margin-top: -5px;
+    
     
    
   }
@@ -374,7 +373,7 @@ font-style: italic;
 
 #indexfooter { 
     background-color: #19232d;
-    border-color: #40677c;
+    
     
   }
 
