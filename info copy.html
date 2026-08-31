@@ -14,7 +14,6 @@
    <main>
          <flexcontainer>
           <maincontent>
-             <div class="broider">
              <div id="triflexwrapper"> 
 
                 <div id="tridisplay">
@@ -30,7 +29,6 @@
                 </div>
 
               </div> 
-              </div>
            </maincontent>
         </flexcontainer>
           
@@ -38,44 +36,64 @@
       
       <flexcontainer>
 
-            
+            <sidebar>
+              <h1 style="writing-mode: vertical-lr; font-size: 45px; letter-spacing: 15px; margin: auto;"><i> About The Website</i></h1> <!--Kinda bullshit here but it's only for like two pages so maybe ok?-->
+                  
+            </sidebar>
           
-          <maincontent>
-            <div class="broider">
-              
-               
-                <h1 style="font-size: 27px; margin-bottom: 15px;">Deer Mask Archive: The Website</h1> 
-                <hr class="solid">
-              
+          <maincontentmod>
+             <h1>Deer Mask Archive: The Website</h1> 
                 <p>A catalog of ideas/ exercises in creativity / a cure for boredom.</p>
-                <br>
                 <p>Created a few years ago, Deer Mask Archive is my handwritten website to show off all of my cool trinkets and give me a unique space to express my thoughts. It is part scrapbook, photo collage, museum, and personal garden of weird stuff.</p>
-                <br>
                 <p>This site was created on and for typical desktop displays (1920x1080). I use firefox for the majority of testing but check it on a few other browsers to make sure nothing is borked. There are also light and dark themes that will adjust based on your system preferences.</p>
-                <br>
-                <!--<h1>What does "sitename" mean?</h1>
+            <!--<h1>What does "sitename" mean?</h1>
                 <p>It's a striking image, it's strange, and it works with your imagination. What the hell is a deer mask archive? </p>
                 <p>CONCEPTUALIZATION [Medium: Failure] - You cannot grasp an image to match the name. You almost had it, even if just for a fraction of a moment, but it disappeared so quickly that it might not have been there in the first place. This might have all been mere wishful thinking.</p>
-          -->  
-                <h1 style="font-size: 27px; margin-bottom: 15px;">Some Technical Stuff...</h1> 
-                <hr class="solid">
-                <p>Deer Mask Archive is hosted on Github through Github pages. Hosting and version history are consolidated, which makes my life a little easier. I got a domain from Porkbun, it's decently affordable as long as you're okay with a longer domain name.</p>
-                <br>
+          -->
+                <h1>Some technical stuff...</h1>
+                <p>Deer Mask Archive is hosted on Github through Github pages. This is convenient as both hosting and version history are consolidated, which saves me an extra step. It's free, and it's pretty intuitive to grab a domain name when/if you feel ready. I used Porkbun to buy mine, and if you're using Github pages you can even connect the two from their website.  </p>
                 <p>Before Github this webpage was hosted on Neocities, a hosting service/social platform (sort of not really) that I'd still recommend if you're trying to get into the hobby but don't know where to start. It's very beginner-friendly and intuitive, and there are loads of cool webpages to get inspiration from. </p>
-                <br>
                 <p>I usually just use vscode for writing the website, but I don't think your code editor matters all that much as long as it's something you're comfortable using. </p>
-                <br>
-                <h1 style="font-size: 27px; margin-bottom: 15px;">Can I use your code?</h1> 
-                <hr class="solid">
-                <p>Sure, but just bear in mind that some of it isn't mine to begin with/and or badly formatted.</p>
-          
-                <img src="assets/banners/deermasklogo.png" style="width: 100%;">
-            </div>
-            
+
+                <img src="assets/banners/web_banner.png">
 
              
             
+          </maincontentmod>
+            
 
+      </flexcontainer>
+
+      <flexcontainer>
+       
+        <flexboxquarter>
+          <div class="pixol">
+        <h1><a href="credits.html">Credits</a></h1>
+            </div>
+       </flexboxquarter>
+
+        <flexboxquarter>
+          <div class="pixol">
+            <h1><a href="changelog.html">Changelog</a></h1>
+            </div>
+       </flexboxquarter>
+
+        <flexboxquarter>
+          <div class="pixol">
+            <h1><a href="">Archive</a></h1>
+            </div>
+       </flexboxquarter>
+
+
+       
+       <flexboxquarter style="border-style: none;">
+        <div class="pixol">
+         <h1><a href="">IDK</a></h1>
+            </div>
+       </flexboxquarter>
+
+
+      </flexcontainer>
       
          
       
@@ -92,36 +110,30 @@ body {
     background-size: cover;
     background-position: fixed;
   }
-maincontent { /* putting borders here because i want maincontent to be more modular for my other shit*/
-    
-    background-image: url(assets/webassets/dotcrosslight.png); 
+ maincontentmod { /* putting borders here because i want maincontent to be more modular for my other shit*/
+    width: calc(100% - 150px);
+    max-width: 800px;
+    border-width: 3px;
+    background-color: #a0c86e;
+    border-style: solid none solid none;
+    border-color: #5e7840;
+    padding: 10px;
+    background-image: url(assets/webassets/bayerlight.png); \
     background-repeat:repeat ;
-    background-color:  rgba(160, 200, 110, 0.8);
+    
   }
-  
 
- hr.solid {
-  border-top: 2px dotted #000;
-  border-bottom: none;
-} 
 @media (prefers-color-scheme: dark) {
   body {
   background-image: url("assets/webassets/infodark.png");  
   }
-  maincontent {
-    
-    background-image: url(assets/webassets/dotcrossdark.png);
-    background-color: rgba(25, 35, 45, 0.9);
+  maincontentmod {
+    background-color: #19232d;
+    border-color: #40677c;
+    background-image: url(assets/webassets/bayerdark.png);
   }
-
-   hr.solid {
-  border-top: 2px dotted #fff;
-  border-bottom: none;
-}
-
 }
 </style>
 
 </html>
-
 

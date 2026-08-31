@@ -1,134 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <title>sketchbook</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="some drawings">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Screenshots</title>
-    <link href="css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/screenshots.css">
-    <script src="js/lightbox-plus-jquery.js"></script>
-    
-    <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
-  </head>
-  <body> 
-  
-<!-- Header Area -->  
- 
-<div id="container"> 
+   
+  <style>
+ 	* { box-sizing: border-box; }
+	body { 
+  background: url('assets/webassets/linklight.png'); 
+  background-repeat: none;
+  background-size: cover;
+  color: black;}
+	section {
+		border: 0.8vw solid black;
+		background-color: white;
+		border-radius: 2vw;
+		width: 65vw;
+		height: 40vw;
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 0.2vw;
+	}
+	section#start { 
+		display: flex;
+		z-index: 1;
+	}
+	section:target {
+		display: flex;
+		z-index: 2;
+	}
+	.pageL,	.pageR {
+		height: 100%;
+		width:50%;
+		display: inline-block;
+		position: relative;
+		border-radius: 1.5vw;
+		font-size: 32px;
+	}
+	.pageL { border-left: 0.1vw grey solid; }
+	.pageR { border-right: 0.1vw grey solid; }
+	a.pageL:hover::after, a.pageL:focus::after {
+		content: '←';
+		color: black;
+		position: absolute;
+		bottom: 1vw;
+		left: 1.2vw;
+	}
+	a.pageR:hover::after, a.pageR:focus::after {
+		content: '→';
+		color: black;
+		position: absolute;
+		bottom: 1vw;
+		right: 1.2vw;
+	}
+	.mid { width: 1%; background: linear-gradient(to right, white, grey, white); }
+	img, h1, p { max-width: 90%; max-height: 90%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+		image-rendering: auto;
+		filter: none;
+	}
+	h1 { text-align: center; top: 40%; }
+	section a:hover, section a:focus { background-color: transparent; }
+	.home {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 3
+	}
+	.home a { color: teal; background-color: white; }
+	.home a:hover, .home a:focus { color: white; background-color: teal; }
+	
+	@media screen and (max-width: 1000px){
+		section {
+			width: 97.5vw;
+			height: 67.5vw;
+		}
+	}
+	
+	@media screen and (max-width: 600px){
+		main { 
+			display: flex;
+			width: 100%;
+			height: 100vh;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+		section {
+			width: 200vw;
+			height: fit-content;
+			align-content: center;
+			display:flex;
+			border: none;
+			border-radius: 0;
+			outline:none;
+			border-top: 3px outset lightgrey;
+			border-bottom: 3px outset lightgrey;
+		}
+		.mid { display: none; }
+		section { 	
+			position: static;
+			transform: translate(0,0);
+			margin: auto;
+		}
+		.pageL,	.pageR {
+			width: 100vw;
+			height: 60vh;
+			min-height: 98vw;
+			padding: 40px 0;
+			display: inline-block;
+			border-left: none;
+			border-right: none;
+		}
+		img { max-width: 100%; padding: 2vw; }
+		h1 { top: 50%; }
+		h1::after {
+			content: '-->';
+			display: block;
+			margin: 40px;
+			font-size: 40px;
+		}
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		body { background: url(assets/webassets/palettedark.jpg); }
+	}
+  </style>
+</head>
+<body>
 
+<nav class="home"><a href="index.html">return home</a></nav>
 
-            <div id="flex">
-<main style="background-color: transparent; padding: 0px; height: auto; margin-top: 20px; border-width: 0px;">
-<div class="lighttext" style="background-color: transparent;">
-<h1 style="font-family: Windows; font-size: 60px; margin-bottom: 5px; margin-left: 10px; color: white; -moz-osx-font-smoothing: grayscale;"> Screenshot Gallery </h1> 
-<a href="index.html" style="font-family: Windows; color: white; font-size: 25px;margin-left: 15px; text-decoration: none;">Home</a><a href="misc.html" style="font-family: Windows; margin-left: 50px; color: white; font-size: 25px; text-decoration: none;">Back</a>
+<main>
 
-  </div></h1> 
-  
-  <!-- Row One -->
-    <div class="photogrid" style="vertical-align: top">
-      <div><a href="assets/screenshots/burnttrees.jpg" data-lightbox="example-1" data-title="Firewatch"><img src="assets/screenshots/burnttrees.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-    
-    </div>
-  
-  <!-- Row Three --> 
-    <div class="photogridleft" style="vertical-align: top">
-      <div><a href="assets/screenshots/journeymountain.jpg" data-lightbox="example-1" data-title="Journey"><img src="assets/screenshots/journeymountain.jpg" alt="image-1" height="auto" width="100%" loading="lazy" /></a> </div>
-      
-    </div>
+<section id="start">
+	<div class="pageL">
+		<img src="assets/screenshots/astralprojection.jpg" alt="">
+	</div>
+	<div class="mid"></div>
+	<a class="pageR" href="#01">
+		<img src="assets/art/arzach.JPG" alt="">
+	</a>
+</section>
 
- </main>
- </div>
-            
-<footernonstick id="footernonstick" style="margin-top: 25px; margin-bottom: 25px; background-color: transparent;"> 
-<h1 style="font-size: 25px; font-family: Windows; margin-top: 10px; color: white;"> Hosted by Github, Formatted with Firefox, Written with Visual Studio Code | ©2026 Ari | <u><a style="color: white; text-decoration: none;" href="credits.html" >Credits</a></u>, <u> <a style="color: white; text-decoration: none;" href="changelog.html" >Changelog</a></u> |</h1>
-</footer>
-</div>
-        
-       
-        <style>
+<section id="01">
+	<a class="pageL" href="#start">
+		<img src="assets/art/burningman.png" alt="">
+	</a>
+	<div class="mid"></div>
+	<a class="pageR" href="#02">
+		<img src="assets/art/crestsketch.jpg" alt="">
+	</a>
+</section>
 
-.photogrid {
-grid-auto-flow: row dense;
-display: grid;
-row-gap: 10px; 
-margin-right: 10px;
-grid-template-columns: 500px;
-width: 500px;
-float: left;
-}
-.photogridleft {
-grid-auto-flow: row dense;
-display: grid;
-margin-left: 0px;
-row-gap: 10px;  
-grid-template-columns: 500px;
-width: 500px;
-float: left;
-}
+<section id="02">
+	<a class="pageL" href="#01">
+		<img src="assets/art/glass.jpg" alt="">
+	</a>
+	<div class="mid"></div>
+	<a class="pageR" href="#03">
+		<img src="assets/art/telephone.png" alt="">
+	</a>
+</section>
 
-.photogrid > div {
-  background-color: transparent;
-  height: auto;
-  transition-duration: .2s;
-}
-.photogrid > div:hover {
-  transform: scale(1.10, 1.10);
-  transform-origin: center;
-}
-.photogrid > div:hover p {
-  transform: scale(0.8, 0.8);
-  transform-origin: center;
-}
-.photogridleft > div {
-  background-color: transparent;
-  height: auto;
-  transition-duration: .2s;
-}
-.photogridleft > div:hover {
-  transform: scale(1.10, 1.10);
-  transform-origin: center;
-}
-.photogridleft > div:hover p {
-  transform: scale(0.8, 0.8);
-  transform-origin: center;
-}
+<section id="03">
+	<a class="pageL" href="#02">
+		<img src="assets/art/fishdreams.png" alt="">
+	</a>
+	<div class="mid"></div>
+	<div class="pageR">
+		<img src="assets/art/waterscene.JPG" alt="">
+	</div>
+</section>
 
-.rounded {
-  border-radius: 5px;
-}
+</main>
 
-.lighttext {
-  background-color: #dbc7a6;
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-body {
-background-image: url("assets/webassets/bayerlight.png");
-background-color: #a0c86e;
-background-repeat: repeat;
-
-background-attachment: fixed;
-}
-#container {
-max-width: 1020px;
-margin: 0 auto;
-}
-</style>
-</body>
-<script>
-  lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'albumLabel': false,
-    'disableScrolling': true,
-    'fadeDuration': 200,
-    'imageFadeDuration': 300,
-    'showImageNumberLabel': false,
-  })
-
-</script>
 </body>
 </html>
+
