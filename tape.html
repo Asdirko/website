@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <html>
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Info</title>
+      <link rel="stylesheet" href="css/maintheme.css">
+      <link rel="icon" type="image/x-icon" href="assets/webassets/favicon.png">
+    </head>
+
+  <body> 
+    
+   <main>
+
+     <flexcontainer style="justify-content: center;">
+        <img src="assets/webassets/tape.png">
+     </flexcontainer>
+          <flexcontainer>
+          <maincontent>
+             <div class="butterfly">
+            
+              </div>
+           </maincontent>
+        </flexcontainer>
+          
+      
+      </main>
+         
+     
+      
+  </body>
+
+<style>
+.butterfly {
+  color: black;
+  background: #9c9;
+  padding: 22px;
+  border-image-slice: 11 13;
+  border-image-width: 22px 26px;
+  border-image-repeat: round;
+  border-style: solid;
+  border-color: transparent;
+  image-rendering: pixelated;
+  border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAoCAMAAABdCYMbAAAAw1BMVEUAAABmmTP/zJkzMwBERERmMwAREREiIiJVVVXMzMxEAABmZjMzMzN3d3dmZma7u7szAAAiAACZZjOZZmaZZgC7AACIiIj/mQD/ZgD/MwDdAACZmZnMmTOqqqrMmQD/zDMzZmaZAABmMzPMZgD/zMxVAADMzJnMmWb/zGb/zAB3AAD/mTP//5kAAAAzM2ZmM5mZmWZmZsxmM2aZmcyZZsyZM2bMZjP/ZjOZMzNmZpkzM5nMZmbMzGZmmcz//2aZZpn/mWaDnx71AAAAAXRSTlMAQObYZgAAAmlJREFUeNp0zoVigzAQgOFchAQP2ZWrC8xYXd7/2Xalc/lx7kMEcBKkBKUN/EhH1vFe8ZgNJ+KbBqOSFDKrsvzDFqXWBaSJMvCufaVMMHdYDSrPOq217n3hCm1zDeB5AncmgKq8UIknTGwYjsYe3CTOXQjT2SxM57jIlzXr8WgYbILkEyWS1ZAwbXA8qHiUueUc5y1qbFuaNxkA1NVgjE2KNFwlwpReKWON8v6eZzpjPMcMWz444O697+fKl0ZA/UDUVEjkH4ErkbinZ5rPb/rRE2HVED3UICDhYdBI3QtcyzWztdus21b3Gl46Qh1YJawVHztYdx1C3/WXFwDPhDcM2HVr6Fgp1oBEALBYwPbvriMAIgTWn23FX20/wRddQ/SnjqD+rS33p7bcT21zt9v+rXcutz90s9vbf7Td75p3nfWHQ33cR//oaH+sD73KhDmwdSfW9m+9taxP7sqMaLJ8FnJ3vhz/1cfL2eVhlmfNayd1wOk8DIVxPBna0oDkFRACWNjEjnbbTrdm/f6f6j0puK48xQVC/gKe/NR0D966i6cM60z+4qwP90nNj6d9pci8wHphjulln49ZvUM8fdJnXbMBtcnrKsUphrciKiml8mWGbzN/94ZITVQPxR/WvtScJkUUS7oGooOaKFxTiURS27KdBzp8m4bzVqzUC4+37dbxbDSqzcydNCMvSkYwOtPnvkO17uTWuFGmpHojg/R1lbCua/a6l1ImVq2rMa7360HKP/y03VgNfzEwti0yMrYpcjX2n5Pml7G6ITI2VjdExsbqhsjYWN0SGRvbEBkbC0QGxgKRfxj7HxkSYiTBmZBnAAAAAElFTkSuQmCC");
+}
+body {
+    
+    background-image: url("assets/webassets/infolight.png");
+    background-size: cover;
+    background-position: fixed;
+  }
+maincontent { /* putting borders here because i want maincontent to be more modular for my other shit*/
+    
+   
+    background-repeat:repeat ;
+    background-color:  rgba(160, 200, 110, 0.8);
+  }
+  
+
+ hr.solid {
+  border-top: 2px dotted #000;
+  border-bottom: none;
+} 
+@media (prefers-color-scheme: dark) {
+  body {
+  background-image: url("assets/webassets/infodark.png");  
+  }
+  maincontent {
+    
+
+    background-color: rgba(25, 35, 45, 0.9);
+  }
+
+   hr.solid {
+  border-top: 2px dotted #fff;
+  border-bottom: none;
+}
+
+}
+</style>
+
+</html>
+
