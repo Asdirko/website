@@ -97,7 +97,9 @@ padding-left: 100%;
 background-color: #a0c86e;
 }
 body {
+  
 background-attachment: fixed; /* prevents bg scrolling */
+
 }   
 
 flexcontainer {

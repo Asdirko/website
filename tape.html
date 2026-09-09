@@ -14,13 +14,15 @@
    <main>
 
      <flexcontainer style="justify-content: center;">
-        <img src="assets/webassets/tape.png">
+        <img class="hover" src="assets/webassets/tape.png">
      </flexcontainer>
           <flexcontainer>
           <maincontent>
              <div class="butterfly">
-            
-              </div>
+             <p>a sony TCM-150 i found on fb for like 15 bucks. apparently was just sitting in the back of a record store for like 20ish years and was never used. it's mono, but i can forgive that. one of my favorite little electronic trinkets </p>
+             
+            <a href="index.html"><i>*home*</i></a>
+            </div>
            </maincontent>
         </flexcontainer>
           
@@ -32,10 +34,13 @@
   </body>
 
 <style>
+a {
+    font-family: IBM;
+}
 .butterfly {
   color: black;
   background: #9c9;
-  padding: 22px;
+  padding: 30px;
   border-image-slice: 11 13;
   border-image-width: 22px 26px;
   border-image-repeat: round;
@@ -46,7 +51,7 @@
 }
 body {
     
-    background-image: url("assets/webassets/infolight.png");
+    background-image: url("assets/webassets/recslight.png");
     background-size: cover;
     background-position: fixed;
   }
@@ -57,14 +62,22 @@ maincontent { /* putting borders here because i want maincontent to be more modu
     background-color:  rgba(160, 200, 110, 0.8);
   }
   
-
+.hover {
+    transition: 0.2s;
+}
+.hover:hover {
+    transform: scale(1.1);
+}
  hr.solid {
   border-top: 2px dotted #000;
   border-bottom: none;
 } 
 @media (prefers-color-scheme: dark) {
   body {
-  background-image: url("assets/webassets/infodark.png");  
+  background-image: url("assets/webassets/recsdark.png");  
+  }
+  p {
+color: #000;
   }
   maincontent {
     
