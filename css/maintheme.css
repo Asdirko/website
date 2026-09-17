@@ -120,6 +120,7 @@ flexbox8 {
 flexbox8 img{
     width: 100%;   
     background-color: transparent;
+    image-rendering: pixelated;
     
     max-width: calc(100%/7.3);
    
