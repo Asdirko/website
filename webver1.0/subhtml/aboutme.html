@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari's Website</title>
+    <link rel="icon" type="image/x-icon" href="https://fisheye.neocities.org/computer-diskette.png">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body> 
+<div id="container"> 
+<div id="header" style="height: 145px;"></div>
+            <div id="headerArea">
+                
+                
+            <nav id="navbar" style="margin-bottom: 10px;"><ul>
+                <li><a href="https://fisheye.neocities.org/">Home</a></li>
+                <li><a href="https://fisheye.neocities.org/musings">Written Works</a></li>
+                 <li><a href="https://fisheye.neocities.org/artmisc">Art</a></li>
+                 <li><a href="https://fisheye.neocities.org/links">Links</a></li>
+                 <li><a href="https://fisheye.neocities.org/misc">Misc</a></li>
+                <li><a href="https://fisheye.neocities.org/aboutme">Info</a></li>
+                
+                
+                
+              </ul></nav></div>
+
+            <div id="flex">
+                <aside id="leftSidebar" style="margin-right: 20px;">
+                    <h2> &nbsp; &nbsp;-  Help Desk -</h2>
+                    <div class="box">
+                        <p style="font-family: csoft"></p>
+                        <ul style="padding-left:20px;">
+                        
+                        
+                            <li style="font-family: csoft"> <a href="https://fisheye.neocities.org/sitemap">Site Map</a> </li>
+                            
+                            <li style="font-family: csoft"> <a href="https://fisheye.neocities.org/faq"> FAQ </a> </li>
+                            
+                          
+                            <li style="font-family: csoft"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Instructional Video </a> </li>
+                            
+                          
+                        </ul>
+                        
+                    </div>
+                    <br>
+                    
+                    
+                     <img src="https://rawfury.com/wp-content/uploads/2020/10/ClimbingGif.gif" class="centerkill" height="200px" width="200px">
+                     
+                     
+                    
+                </aside>
+                <main>
+                    <h1> Info, About Me, FAQ</h1>
+                    <p style="font-family: csoft"> Wow, you made it past the front page! Apparently not many people do. I guess I should introduce myself.</p>
+                    <p style="font-family: csoft"> I'm Ari, creator of everything on this site unless otherwise specified, or where something looks too good to be made by my clumsy fingers. I already have a blurb on the home page about why I made this site, so I'll just cut to the chase. </p>
+                    <p style="font-family: csoft"> I'm (probably?) like your average next door neighbour who enjoys creative noodling when not busy doing life things. I like cream soda, dislike scrambled eggs and am very proud of the fact that I have kept several potted plants alive for over a year. </p> 
+                    <p style="font-family: csoft"> My favorite movies include Dune (the books are stellar too), Blade Runner, the Sergio Leone westerns, and Nausicaa. My candidate for favorite novel is a pretty close match between The Man Who Was Thursday and The Westing Game. Both are excellent and I'm not sure I'll ever decide. My music taste is far more erratic and less-defined than my taste in literature, but Boards Of Canada is one band that I can't help but come back to time and time again. Japanese Breakfast is awesome too. I also like origami, strong coffee, the works of Moebius, and indie video games. </p>
+                    <p style="font-family: csoft"> Anyways, If need help looking for something or have questions, I recommend checking the site map or FAQ at your left. I (hopefully?) have organized everything in some sort of orderly fashion, but even the best librarians put books in the wrong section from time to time. </p>
+                    
+                   
+                    
+                  
+                    
+                    
+
+
+                </main>
+                
+            </div>
+            
+        <footer id="footer" style="margin-top: 24px;"> 
+        <h1 style="font-size: 10px"> Background From Outer Wilds, Game By Mobius Digital - "The Universe is, and we are." - Solanum  </h1>
+        
+        </footer></div>
+        
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --header-image: url('https://fisheye.neocities.org/header.png');
+                --body-bg-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1622100/ss_7992fbd287fce2335db3f174e11d2ed1ae815881.jpg');
+                
+                
+            }
+                
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: csoft;
+                src: url('https://fisheye.neocities.org/csoftreg.otf');
+            }
+
+            @font-face {
+                font-family: csoft;
+                src: url('https://fisheye.neocities.org/csoftbold.otf');
+                font-weight: bold;
+            }
+            @font-face {
+                font-family: Strasua;
+                src: url('https://fisheye.neocities.org/Strasua.otf');
+            }
+          
+
+            body {
+               
+                margin: 0;
+                background-color: #000000;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: 65px;
+                color: #000000;
+                background-image: var(--body-bg-image);
+                background-size: cover;
+                background-repeat no-repeat;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #000000;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                background-color: #FFFFFF;
+                /* header color here! */
+                height: 150px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: #FFFFFF;
+                /* navbar color */
+                width: 100%;
+                border-radius: 0px 0px 15px 15px;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: ffffff;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: #ffffff;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                border-radius: 15px;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #ffffff;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                border-radius: 15px;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #FFFFFF;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                border-radius: 15px;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #000000;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #000000;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #fbf4e4;
+                border: 2px solid #1cb574;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            
+            .centerkill {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+            }
+            
+            .banner {
+             
+              margin-left: 2px;
+              margin-right: 2px;
+              
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+
+  </body>
+</html>
