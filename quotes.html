@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags and CSS link -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Random Quote Generator</div>
+      
+      <div class="quote_text"><i>Click To Generate A Quote</i></div>
+      <button onclick="generateQuote()" class="gnBtn"><span id="cog">Generate!</span></button>
+      </div>
+    <nav class="home"><a href="index.html">return home</a></nav>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
+<style>
+/* Colors that will be used in the making of this website */
+@font-face {
+font-family: IBM;
+src: url("../website/assets/fonts/IBM\ PS-55.ttf");
+
+}
+
+.home {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 3
+	}
+	.home a { color: teal; background-color: white; }
+	.home a:hover, .home a:focus { color: white; background-color: teal; }
+	
+:root {
+  
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM";
+}
+
+body {
+  
+  background-color: #5e7840 ;
+  background-image: url(assets/webassets/bayerlight.png);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.container {
+ 
+  background-image: url(assets/webassets/indexlight.png);
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+  width: 800px;
+  min-height: 600px;
+}
+
+.container .title {
+  font-weight: 700;
+  color: teal; background-color: white;
+  font-size: 4rem;
+}
+
+.quote_text {
+  font-size:1.8rem;
+  font-weight: 500;
+  margin-top: 20px;
+
+  color: teal; background-color: white;
+}
+
+.gnBtn {
+  width: 80%;
+  height: 50px;
+  margin-top: 25px;
+
+  background-color:  #a0c86e;
+  cursor: pointer;
+ 
+
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#cog {
+  color: var(--gnBtnColor);
+}
+
+@media (prefers-color-scheme: dark) {
+.container{
+background-image: url(assets/webassets/dotcrossdark.png);
+}
+.gnBtn {
+background-color: #40677c;
+color: white;
+}
+
+.quote_text {
+color: teal; background-color: white;
+}
+.container .title {
+color: teal; background-color: white;
+}
+
+.container{
+
+background-image: url("assets/webassets/coolpool.png");
+}
+
+body{
+background-color: #19232d;
+background-image: url("assets/webassets/bayerdark.png");
+}
+}
+</style>
+
+<script>
+    var quotes = [
+  "The strain of anti-intellectualism has been a constant thread winding its way through our political and cultural life, nurtured by the false notion that democracy means that 'my ignorance is just as good as your knowledge.' ― Isaac Asimov",
+  "The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion. - Albert Camus,",
+  "Art is an act of the soul, not the intellect. When we are dealing with people's dreams - their visions, really - we are in the realm of the sacred. We are involved with forces and energies larger than our own. We are engaged in a sacred transaction of which we know only a little: the shadow, not the shape. -Julia Cameron",
+  "The only thing an old man can tell a young man is that it goes fast, real fast, and if you’re not careful it’s too late. Of course, the young man will never understand this truth. - Norm MacDonald ",
+  "If you want to be a grocer, or a general, or a politician, or a judge, you will invariably become it; that is your punishment. If you never know what you want to be, if you live what some might call the dynamic life but what I will call the artistic life, if each day you are unsure of who you are and what you know you will never become anything, and that is your reward. ― Oscar Wilde ",
+];
+
+let quoteText = document.querySelector(".quote_text");
+
+function generateQuote() {
+  var randomIndex = Math.floor(Math.random() * quotes.length);
+  var quote = quotes[randomIndex]
+  quoteText.innerHTML = '"' + quote + '"'
+}
+</script>
